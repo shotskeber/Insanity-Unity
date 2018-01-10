@@ -1,2 +1,0 @@
-# Insanity-Unity
-InsanityGamePrototype
