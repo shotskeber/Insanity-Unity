@@ -7,28 +7,40 @@ public class HouseScript : MonoBehaviour {
 	public GameObject exterior;
 	public GameObject interior;
 
-	bool canInteract = false;
+	float minX;
+	float maxX;
+
+	bool _canInteract = false;
+
+	GameObject player;
 
 	// Use this for initialization
 	void Start () {
-		
+		player = GameObject.FindWithTag ("Player");
+		minX = GetComponent<Collider2D> ().bounds.min.x;
+		maxX = GetComponent<Collider2D> ().bounds.max.x;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (canInteract) {
+		if (_canInteract) {
 			if (Input.GetKeyDown (KeyCode.F)) {
-				exterior.SetActive (false);
-				interior.SetActive (true);
+				if (exterior.activeSelf) {
+					exterior.SetActive (false);
+					interior.SetActive (true);
+				} else {
+					exterior.SetActive (true);
+					interior.SetActive (false);
+				}
 			}
 		}
+
+		if (player.transform.position.x >= minX && player.transform.position.x <= maxX) {
+			_canInteract = true;
+		} else {
+			_canInteract = false;
+		}
+
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
-		canInteract = true;
-	}
-
-	void OnTriggerExit2D(Collider2D other) {
-		canInteract = false;
-	}
 }
