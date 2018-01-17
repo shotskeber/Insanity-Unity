@@ -24,7 +24,7 @@ public class HouseScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (_canInteract) {
-			if (Input.GetKeyDown (KeyCode.F)) {
+			if (Input.GetKeyDown (KeyCode.UpArrow)) {
 				if (exterior.activeSelf) {
 					exterior.SetActive (false);
 					interior.SetActive (true);

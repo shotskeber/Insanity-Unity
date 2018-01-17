@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 	public float inAirDamping = 5f;
 	public float jumpHeight = 3f;
 	public float directionP = 1f;
+	public bool _ladderInteract = false;
 
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
@@ -52,12 +53,6 @@ public class PlayerMovement : MonoBehaviour {
 		if( _controller.isGrounded )
 			_velocity.y = 0;
 
-		if( _controller.isGrounded && Input.GetKey( KeyCode.UpArrow))
-		{
-
-			_velocity.y = Mathf.Sqrt( 2f * jumpHeight * -gravity );
-			//_animator.Play( Animator.StringToHash( "Jump" ) );
-		}
 
 		if (Input.GetKey( KeyCode.F )) {
 		}
@@ -107,12 +102,13 @@ public class PlayerMovement : MonoBehaviour {
 		if( _controller.isGrounded && Input.GetKey( KeyCode.DownArrow ))
 		{
 			_velocity.y *= 2f;
-			//_controller.ignoreOneWayPlatformsThisFrame = true;
+			_controller.ignoreOneWayPlatformsThisFrame = true;
 		}
 
 		_controller.move( _velocity * Time.deltaTime );
 
 		// grab our current _velocity to use as a base for all calculations
+
 		_velocity = _controller.velocity;
 	}
 }
