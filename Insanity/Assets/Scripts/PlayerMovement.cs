@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	void Start(){
-
+		runSpeed = 4f;
 	}
 
 	#region Event Listeners
@@ -53,8 +53,18 @@ public class PlayerMovement : MonoBehaviour {
 		if( _controller.isGrounded )
 			_velocity.y = 0;
 
+		if (Input.GetKey (KeyCode.LeftShift)) {
+			runSpeed = 8f;
+		} else {
+			runSpeed = 4f;
+		}
 
-		if (Input.GetKey( KeyCode.F )) {
+		if (Input.GetKeyDown (KeyCode.H)) {
+			_animator.SetTrigger("Hide");
+		}
+
+		if (Input.GetKeyDown (KeyCode.G)) {
+			_animator.SetTrigger("Fall");
 		}
 
 		if( Input.GetKey( KeyCode.RightArrow) )
@@ -66,7 +76,16 @@ public class PlayerMovement : MonoBehaviour {
 			}
 			//if (_controller.isGrounded) {
 			//}
-			//_animator.Play( Animator.StringToHash( "Run" ) );
+			if (runSpeed == 4f) {
+				_animator.SetBool ("IsWalking", true);
+				_animator.SetBool ("IsRunning", false);
+				_animator.SetBool("IsStatic", false);
+			} else {
+				_animator.SetBool ("IsRunning", true);
+				_animator.SetBool ("IsWalking", false);
+				_animator.SetBool("IsStatic", false);
+			}
+
 		}
 		else if( Input.GetKey( KeyCode.LeftArrow ) )
 		{
@@ -74,6 +93,16 @@ public class PlayerMovement : MonoBehaviour {
 			if (transform.localScale.x > 0f) {
 				transform.localScale = new Vector3 (-transform.localScale.x, transform.localScale.y, transform.localScale.z);
 				directionP = -1;
+			}
+
+			if (runSpeed == 4f) {
+				_animator.SetBool ("IsWalking", true);
+				_animator.SetBool ("IsRunning", false);
+				_animator.SetBool("IsStatic", false);
+			} else {
+				_animator.SetBool ("IsRunning", true);
+				_animator.SetBool ("IsWalking", false);
+				_animator.SetBool("IsStatic", false);
 			}
 			//if( _controller.isGrounded ){}
 			//_animator.Play( Animator.StringToHash( "Run" ) );
@@ -84,6 +113,9 @@ public class PlayerMovement : MonoBehaviour {
 
 			//if( _controller.isGrounded ){}
 			//_animator.Play( Animator.StringToHash( "Idle" ) );
+			_animator.SetBool ("IsWalking", false);
+			_animator.SetBool ("IsWalking", false);
+			_animator.SetBool("IsStatic", true);
 		}
 		// we can only jump whilst grounded
 

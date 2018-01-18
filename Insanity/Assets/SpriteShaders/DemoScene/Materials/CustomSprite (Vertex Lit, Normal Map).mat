@@ -9,7 +9,7 @@ Material:
   m_Name: CustomSprite (Vertex Lit, Normal Map)
   m_Shader: {fileID: 4800000, guid: f1c332c0884ef2b4bb26584f688eac3a, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA PIXELSNAP_ON _ALPHABLEND_ON _FIXED_NORMALS_VIEWSPACE
-    _GLOSSYREFLECTIONS_OFF _NORMALMAP _SPHERICAL_HARMONICS _ZWRITE_OFF
+    _GLOSSYREFLECTIONS_OFF _SPHERICAL_HARMONICS _ZWRITE_OFF
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -31,7 +31,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 9ee379aeb6b04c24e86eeaa9a0e747ff, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -83,10 +83,10 @@ Material:
     - _EmissionPower: 2
     - _EnableExternalAlpha: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.598
+    - _Glossiness: 0.985
     - _GlossyReflections: 0
     - _Hue: 0
-    - _Metallic: 0.835
+    - _Metallic: 0.76
     - _Mode: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
