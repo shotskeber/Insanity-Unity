@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour {
 		if( _controller.isGrounded && Input.GetKey( KeyCode.UpArrow))
 		{
 
-			_velocity.y = Mathf.Sqrt( 2f * jumpHeight * -gravity );
+			//_velocity.y = Mathf.Sqrt( 2f * jumpHeight * -gravity );
 			//_animator.Play( Animator.StringToHash( "Jump" ) );
 		}
 
@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour {
 		// this lets us jump down through one way platforms
 		if( _controller.isGrounded && Input.GetKey( KeyCode.DownArrow ))
 		{
-			_velocity.y *= 2f;
+			//_velocity.y *= 2f;
 			//_controller.ignoreOneWayPlatformsThisFrame = true;
 		}
 
