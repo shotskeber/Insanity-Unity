@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 	public float jumpHeight = 3f;
 	public float directionP = 1f;
 	public bool _ladderInteract = false;
+	public bool isHidden = false;
 
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
