@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Prime31;
+using Fungus;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -59,7 +60,8 @@ public class PlayerMovement : MonoBehaviour {
 			//_animator.Play( Animator.StringToHash( "Jump" ) );
 		}
 
-		if (Input.GetKey( KeyCode.F )) {
+		if (Input.GetKeyDown( KeyCode.F )) {
+			Fungus.Flowchart.BroadcastFungusMessage ("startStory");
 		}
 
 		if( Input.GetKey( KeyCode.RightArrow) )
@@ -91,7 +93,6 @@ public class PlayerMovement : MonoBehaviour {
 			//_animator.Play( Animator.StringToHash( "Idle" ) );
 		}
 		// we can only jump whilst grounded
-
 
 
 
