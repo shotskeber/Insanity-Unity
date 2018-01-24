@@ -667,8 +667,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
+  targetMethod: 
+  targetMethodText: 
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -937,7 +937,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 267946737}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 267946727}
   variables:
   - {fileID: 267946728}
   description: 
@@ -2589,9 +2590,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1113475234}
+  - {fileID: 1113475238}
   selectedCommands:
-  - {fileID: 1113475242}
+  - {fileID: 1113475241}
   variables:
   - {fileID: 1113475240}
   description: 
@@ -2872,8 +2873,8 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
+  targetMethod: 
+  targetMethodText: 
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -3531,7 +3532,7 @@ Prefab:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1824538208251804, guid: c6a1b7095b1ecec4a9231852dbe6f05a, type: 2}
-      propertyPath: m_TagString
+      propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
