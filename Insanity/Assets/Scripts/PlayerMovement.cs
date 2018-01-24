@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour {
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
 
+	private bool canMove = true;
+
 
 	void Awake()
 	{
@@ -68,7 +70,7 @@ public class PlayerMovement : MonoBehaviour {
 			_animator.SetTrigger("Fall");
 		}
 
-		if( Input.GetKey( KeyCode.RightArrow) )
+		if( Input.GetKey( KeyCode.RightArrow) && canMove)
 		{
 			normalizedHorizontalSpeed = 1;
 			if (transform.localScale.x < 0f) {
@@ -88,7 +90,7 @@ public class PlayerMovement : MonoBehaviour {
 			}
 
 		}
-		else if( Input.GetKey( KeyCode.LeftArrow ) )
+		else if( Input.GetKey( KeyCode.LeftArrow ) && canMove)
 		{
 			normalizedHorizontalSpeed = -1;
 			if (transform.localScale.x > 0f) {
@@ -143,5 +145,13 @@ public class PlayerMovement : MonoBehaviour {
 		// grab our current _velocity to use as a base for all calculations
 
 		_velocity = _controller.velocity;
+	}
+
+	public void StopMovement(){
+		canMove = false;
+	}
+
+	public void ActiveMovement(){
+		canMove = true;
 	}
 }

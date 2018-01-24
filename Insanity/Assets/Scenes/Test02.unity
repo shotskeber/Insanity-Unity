@@ -661,14 +661,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  description: 
+  description: StopMovement
   targetObject: {fileID: 1610928523}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: PlayerMovement
-  targetMethod: 
-  targetMethodText: 
+  targetMethod: StopMovement
+  targetMethodText: 'StopMovement (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -936,9 +936,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 267946737}
+  - {fileID: 267946734}
   selectedCommands:
-  - {fileID: 267946727}
+  - {fileID: 267946725}
   variables:
   - {fileID: 267946728}
   description: 
@@ -2592,7 +2592,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1113475238}
   selectedCommands:
-  - {fileID: 1113475241}
+  - {fileID: 1113475236}
   variables:
   - {fileID: 1113475240}
   description: 
@@ -2777,7 +2777,7 @@ MonoBehaviour:
   character: {fileID: 439750274}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
-  showAlways: 1
+  showAlways: 0
   showCount: 1
   extendPrevious: 1
   fadeWhenDone: 0
@@ -2867,14 +2867,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  description: 
+  description: Stop
   targetObject: {fileID: 1610928523}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: PlayerMovement
-  targetMethod: 
-  targetMethodText: 
+  targetMethod: StopMovement
+  targetMethodText: 'StopMovement (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -4247,7 +4247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 267946738}
+  selectedFlowchart: {fileID: 1113475229}
 --- !u!4 &2013777608
 Transform:
   m_ObjectHideFlags: 1
