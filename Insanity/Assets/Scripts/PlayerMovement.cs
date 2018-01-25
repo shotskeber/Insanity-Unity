@@ -61,11 +61,11 @@ public class PlayerMovement : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.H)) {
-			_animator.SetTrigger("Hide");
+			//_animator.SetTrigger("Hide");
 		}
 
 		if (Input.GetKeyDown (KeyCode.G)) {
-			_animator.SetTrigger("Fall");
+			//_animator.SetTrigger("Fall");
 		}
 
 		if( Input.GetKey( KeyCode.RightArrow) )
