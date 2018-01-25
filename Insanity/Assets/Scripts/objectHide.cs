@@ -15,6 +15,8 @@ public class objectHide : MonoBehaviour {
 	private PlayerMovement _playerMovement;
 	private Vector3 _velocity;
 
+	private bool isHidden = false;
+
 	GameObject player;
 
 	// Use this for initialization
@@ -31,14 +33,20 @@ public class objectHide : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		if (isHidden) {
+			player.transform.position = new Vector3 (Mathf.Clamp(player.transform.position.x, minX, maxX), player.transform.position.y, 0f);
+		}
+
 		if (_canInteract) {
-			if (Input.GetKeyDown(KeyCode.H)) {
+			if (Input.GetKeyDown(KeyCode.H) && !isHidden) {
 				_controller.enabled = false;
 				StartCoroutine (takeCover ());
-
-			} else if (Input.GetKeyDown(KeyCode.H)) {
+				isHidden = true;
+			} else if(Input.GetKeyDown(KeyCode.H) && isHidden) {
 				_controller.enabled = false;
 				StartCoroutine (exitCover ());
+				isHidden = false;
 			} 
 		}else {
 
@@ -62,26 +70,12 @@ public class objectHide : MonoBehaviour {
 	}
 
 	IEnumerator takeCover(){
-		var elapsedTime = 0f;
-		Vector3 startingPos = transform.position;
-		while (elapsedTime < 0.5f)
-		{
-			transform.position = Vector3.Lerp(startingPos, gameObject.transform.position, (elapsedTime / 0.5f));
-			elapsedTime += Time.deltaTime;
-			yield return null;
-		}
+		player.GetComponent<Renderer> ().sortingLayerName = "Platforms";
 		yield return null;
 	}
 
 	IEnumerator exitCover(){
-		var elapsedTime = 0f;
-		Vector3 startingPos = transform.position;
-		while (elapsedTime < 0.5f)
-		{
-			transform.position = Vector3.Lerp(startingPos, gameObject.transform.position, (elapsedTime / 0.5f));
-			elapsedTime += Time.deltaTime;
-			yield return null;
-		}
+		player.GetComponent<Renderer> ().sortingLayerName = "Player";
 		yield return null;
 	}
 }
