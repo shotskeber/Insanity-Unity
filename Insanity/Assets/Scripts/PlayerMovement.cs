@@ -137,7 +137,7 @@ public class PlayerMovement : MonoBehaviour {
 		if( _controller.isGrounded && Input.GetKey( KeyCode.DownArrow ))
 		{
 			_velocity.y *= 2f;
-			_controller.ignoreOneWayPlatformsThisFrame = true;
+			//_controller.ignoreOneWayPlatformsThisFrame = true;
 		}
 
 		_controller.move( _velocity * Time.deltaTime );
