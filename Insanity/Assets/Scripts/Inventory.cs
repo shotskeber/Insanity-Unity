@@ -7,12 +7,12 @@ using System;
 public class Inventory : ScriptableObject {
 
 	[Header("Object Type")]
+	public int id;
+
+	//[Header("Dialogue Properties")]
 
 
-	[Header("Dialogue Properties")]
-
-
-	[Header("Pick Up Properties")]
+	//[Header("Pick Up Properties")]
 
 
 }

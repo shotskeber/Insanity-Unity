@@ -22,7 +22,6 @@ public class PnjTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Collider");
         if (collision.CompareTag("Player"))
         {
             if (collision.gameObject.GetComponent<SpriteRenderer>().sortingLayerName == "Player")
@@ -31,9 +30,5 @@ public class PnjTrigger : MonoBehaviour
             }
         }
 
-    }
-    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
-    {
-        print("collision");
     }
 }
