@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Inventory : MonoBehaviour {
+[Serializable]
+public class Inventory : ScriptableObject {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	[Header("Object Type")]
+
+
+	[Header("Dialogue Properties")]
+
+
+	[Header("Pick Up Properties")]
+
+
 }

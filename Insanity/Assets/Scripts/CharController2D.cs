@@ -59,6 +59,7 @@ namespace Prime31 {
 		public event Action<Collider2D> onTriggerEnterEvent;
 		public event Action<Collider2D> onTriggerStayEvent;
 		public event Action<Collider2D> onTriggerExitEvent;
+		public event Action<Collision2D> onCollisionExitEvent;
 
 
 		/// <summary>
@@ -208,6 +209,10 @@ namespace Prime31 {
 				onTriggerEnterEvent( col );
 		}
 
+		public void OnCollisionEnter2D(Collision2D coll){		
+					if (onCollisionExitEvent != null)		
+						onCollisionExitEvent (coll);		
+					}
 
 		public void OnTriggerStay2D( Collider2D col )
 		{
