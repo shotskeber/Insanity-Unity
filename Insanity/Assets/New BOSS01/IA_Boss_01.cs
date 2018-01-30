@@ -7,6 +7,7 @@ public class IA_Boss_01 : MonoBehaviour {
     #region variables
     [HideInInspector]
     public Transform player;
+
     public int p3Transitions = 0;
     public Transform detector;
     //public float detectorYtr;
@@ -29,15 +30,13 @@ public class IA_Boss_01 : MonoBehaviour {
 
     public BossVisibility bossVisibility_script;
 
-    private bool FSMenable;
     public SpriteRenderer boss01_spr;
 
     public bool phase_1;
     public bool phase_2;
     public bool phase_3;
-    
 
-
+	private bool FSMenable;
 
     #endregion
 
@@ -398,7 +397,7 @@ public class IA_Boss_01 : MonoBehaviour {
     //chose beetwen two attack type (slow, strong)
     IEnumerator Attack(int strongAttackOdds)
     {
-        //randomise between two attack option
+        //random between two attack option
         float strongAttack = Random.Range(-1f, 1f);
 
         yield return new WaitForSecondsRealtime(1f);
