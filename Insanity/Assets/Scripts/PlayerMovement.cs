@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void onTriggerEnterEvent( Collider2D col )
 	{
-		//Debug.Log( "onTriggerEnterEvent: " + col.gameObject.name );
+		Debug.Log( "onTriggerEnterEvent: " + col.gameObject.name );
 	}
 
 	#endregion

@@ -204,7 +204,7 @@ namespace Prime31 {
 
 		public void OnTriggerEnter2D( Collider2D col )
 		{
-			if( onTriggerEnterEvent != null )
+            if (onTriggerEnterEvent != null)
 				onTriggerEnterEvent( col );
 		}
 
