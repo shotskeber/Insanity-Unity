@@ -57,7 +57,7 @@ public class Player_Health_Boss01 : MonoBehaviour
             vignette.smoothness = 0.9f;
             m_Profile.vignette.settings = vignette;
         }
-        else if (playerHealth == 0)
+        else if (playerHealth <= 0)
         {
             vignette.smoothness = 0.95f;
             m_Profile.vignette.settings = vignette;

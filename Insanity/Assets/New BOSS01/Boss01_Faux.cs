@@ -14,7 +14,7 @@ public class Boss01_Faux : MonoBehaviour
     {
         //this.transform.localScale = new Vector3(1, 1, 1);
         //Calculate and store the offset value by getting the distance between the player's position and camera's position.
-        offset = transform.position - bossTr.transform.position;
+        // offset = transform.position - bossTr.transform.position;
         isBossScript = isBossScript.GetComponent<IA_Boss_01>();
     }
 
@@ -22,17 +22,24 @@ public class Boss01_Faux : MonoBehaviour
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = bossTr.transform.position + offset;
+        // transform.position = bossTr.transform.position + offset;
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            playerhealthScript.playerHealth -= 1;
-            Debug.Log("Player" + "-1");
+            if (isBossScript.strongAtk)
+            {
+                playerhealthScript.playerHealth -= 2;
+                Debug.Log("Player" + "-2");
+            } else
+            {
+                playerhealthScript.playerHealth -= 1;
+                Debug.Log("Player" + "-1");
+            }
         }
     }
-
+    /*
     void Update()
     {
         if (isBossScript.bossIsRight)
@@ -48,4 +55,5 @@ public class Boss01_Faux : MonoBehaviour
             transform.localScale = theScale;
         }
     }
+    */
 }

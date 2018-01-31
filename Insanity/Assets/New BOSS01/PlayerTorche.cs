@@ -13,6 +13,7 @@ public class PlayerTorche : MonoBehaviour
     void Start()
     {
         fireParticles = this.gameObject.GetComponent<ParticleSystem>();
+        fireParticles.enableEmission = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -37,6 +38,12 @@ public class PlayerTorche : MonoBehaviour
 
             }
              
+        }
+
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>().sortingLayerName == "Platforms")
+        {
+            fireParticles.enableEmission = false;
+            fireActive = false;
         }
     }
 }
