@@ -20,7 +20,7 @@ public class PlayerTorche : MonoBehaviour
     {
         if (fireActive)
         {
-            if (other.CompareTag("Boss"))
+            if (other.CompareTag("Boss") && iaBossScript.isStuned)
             {
                 iaBossScript.GetComponent<IA_Boss_01>().bossHealthPoints -= 1;
                 fireParticles.enableEmission = false;

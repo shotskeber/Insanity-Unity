@@ -399,7 +399,7 @@ public class IA_Boss_01 : MonoBehaviour {
     {
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
-        yield return new WaitForSecondsRealtime(2f);
+        yield return new WaitForSecondsRealtime(5f);
         bossVisibility_script.enabled = true;
         isStuned = false;
         if (phase_1)
