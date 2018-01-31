@@ -12,10 +12,14 @@ public class IA_Boss_01 : MonoBehaviour {
     public Transform detector;
     //public float detectorYtr;
 
+    public bool isStuned;
+    public GameObject stunParticles;
+
     public bool bossIsRight;
 	public Animator boss01_animator;
 	public Animator portail_animator;
     public bool playerDetected;
+    public bool strongAtk;
 
     public float mvtSpeed = 0.1f;
     [Space(5)]
@@ -26,6 +30,7 @@ public class IA_Boss_01 : MonoBehaviour {
 
     // Boss life
     public int bossHealthPoints = 3;
+    public BoxCollider2D bossCol;
     [Space(5)]
 
     public BossVisibility bossVisibility_script;
@@ -36,7 +41,8 @@ public class IA_Boss_01 : MonoBehaviour {
     public bool phase_2;
     public bool phase_3;
 
-	private bool FSMenable;
+
+    public bool FSMenable;
 
     #endregion
 
@@ -65,6 +71,26 @@ public class IA_Boss_01 : MonoBehaviour {
         if (bossHealthPoints == 0)
         {
             phase3_state = State_P3.DEAD;
+        }
+
+        if (isStuned)
+        {
+            stunParticles.SetActive(true);
+            if (phase_1)
+            {
+                phase1_state = State_P1.STUNED;
+            }
+            else if (phase_2)
+            {
+                phase2_state = State_P2.STUNED;
+            }
+            else if (phase_3)
+            {
+                phase3_state = State_P3.STUNED;
+            }
+        } else
+        {
+            stunParticles.SetActive(false);
         }
     }
 
@@ -230,7 +256,11 @@ public class IA_Boss_01 : MonoBehaviour {
                     case State_P1.DEAD:
                     StartCoroutine("Phase_1_EndingCinematic"); // transition cinematic 1: portail fall
                     break;
-            }
+
+                    case State_P1.STUNED:
+                        StartCoroutine(Stuned());
+                        break;
+                }
         }
 
         if (phase_2)
@@ -283,7 +313,11 @@ public class IA_Boss_01 : MonoBehaviour {
                         StartCoroutine("Phase_2_EndingCinematic"); // transition cinematic 2: manor door fall
                         //Dead();
                         break;
-            }
+
+                    case State_P2.STUNED:
+                        StartCoroutine(Stuned());
+                        break;
+                }
         }
 
             if (phase_3)
@@ -349,6 +383,10 @@ public class IA_Boss_01 : MonoBehaviour {
                     case State_P3.DEAD:
                         StartCoroutine("Phase_3_EndingCinematic"); // transition cinematic 2: manor door fall
                         break;
+
+                    case State_P3.STUNED:
+                        StartCoroutine(Stuned());
+                        break;
                 }
             }
             yield return null;
@@ -357,6 +395,28 @@ public class IA_Boss_01 : MonoBehaviour {
     #endregion
 
     #region coroutines
+    IEnumerator Stuned()
+    {
+        bossVisibility_script.enabled = false;
+        bossVisibility_script.detectingPlayer = false;
+        yield return new WaitForSecondsRealtime(2f);
+        bossVisibility_script.enabled = true;
+        isStuned = false;
+        if (phase_1)
+        {
+            phase1_state = State_P1.PATROL;
+        }
+        else if (phase_2)
+        {
+            phase2_state = State_P2.PATROL;
+        }
+        else if (phase_3)
+        {
+            phase3_state = State_P3.PATROL;
+        }
+        yield return null;
+    }
+
     IEnumerator Chasecr() //go toward player, stop near him, -> ATTACK
     {
         //Transform player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -404,8 +464,10 @@ public class IA_Boss_01 : MonoBehaviour {
         if (strongAttack > strongAttackOdds)
         {
             boss01_animator.SetBool("fast_attack", true);
+            strongAtk = false;
         } else if (strongAttack < strongAttackOdds)
         {
+            strongAtk = true;
             boss01_animator.SetBool("slow_attack", true);
         }
         //Debug.Log("attackAnimation played");
@@ -517,6 +579,7 @@ public class IA_Boss_01 : MonoBehaviour {
     {
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
+        bossCol.enabled = false;
         //bossIsRight = true;
         if (!bossIsRight)
         {
@@ -527,13 +590,14 @@ public class IA_Boss_01 : MonoBehaviour {
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[2].transform.position.x, 
                                                  transform.position.y, transform.position.z), mvtSpeed+1);
 		yield return new WaitForSecondsRealtime(0.5f);
-		portail_animator.SetBool("portailFall", true);
+		portail_animator.SetBool("portail1Fall", true);
         yield return new WaitForSecondsRealtime(2f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[4].transform.position.x, 
                                                  transform.position.y, transform.position.z), mvtSpeed+1);
         phase_1 = false;
         phase_2 = true;
         bossVisibility_script.enabled = true;
+        bossCol.enabled = true;
         Debug.Log("Transition to phase 2.");
         yield return null;
     }
@@ -543,6 +607,7 @@ public class IA_Boss_01 : MonoBehaviour {
     {
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
+        bossCol.enabled = false;
         //bossIsRight = true;
         if (!bossIsRight)
         {
@@ -552,12 +617,15 @@ public class IA_Boss_01 : MonoBehaviour {
         yield return new WaitForSecondsRealtime(1f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[5].transform.position.x,
                                                  transform.position.y, transform.position.z), mvtSpeed + 1);
+        yield return new WaitForSecondsRealtime(0.5f);
+        portail_animator.SetBool("portail2Fall", true);
         yield return new WaitForSecondsRealtime(2f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[8].transform.position.x,
                                                  transform.position.y, transform.position.z), mvtSpeed + 1);
         phase_2 = false;
         phase_3 = true;
         bossVisibility_script.enabled = true;
+        bossCol.enabled = true;
         Debug.Log("Transition to phase 3.");
         yield return null;
     }
@@ -574,7 +642,7 @@ public class IA_Boss_01 : MonoBehaviour {
         ATTACK,
         INVESTIGATE,
         STUNED,
-        DEAD
+        DEAD,
     }
 
     public State_P2 phase2_state;

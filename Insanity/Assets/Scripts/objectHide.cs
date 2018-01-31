@@ -53,21 +53,25 @@ public class objectHide : MonoBehaviour {
 			_controller.enabled = true;
 		}
 
-		if (player.transform.position.x >= minX && player.transform.position.x <= maxX) {
-			if (player.transform.position.y >= minY && player.transform.position.y <= maxY) {
-
-				_canInteract = true;
-
-			} else {
-				_canInteract = false;
-			}
-		} else {
-			_canInteract = false;
-		}
-
 
 
 	}
+
+	void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			_canInteract = true;
+		}
+
+	}
+	void OnTriggerExit2D(Collider2D col){
+		if (col.CompareTag("Player"))
+		{
+			_canInteract = false;
+		}
+	}
+
 
 	IEnumerator takeCover(){
 		player.GetComponent<Renderer> ().sortingLayerName = "Platforms";

@@ -35,12 +35,23 @@ public class HouseScript : MonoBehaviour {
 			}
 		}
 
-		if (player.transform.position.x >= minX && player.transform.position.x <= maxX) {
+
+	}
+
+	void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
 			_canInteract = true;
-		} else {
-			_canInteract = false;
 		}
 
 	}
+	void OnTriggerExit2D(Collider2D col){
+		if (col.CompareTag("Player"))
+		{
+			_canInteract = false;
+		}
+	}
+
 
 }

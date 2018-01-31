@@ -10,7 +10,7 @@ public class LadderScript : MonoBehaviour {
 	float minY;
 	float maxY;
 
-	private bool _canInteract = false;
+	public bool _canInteract = false;
 	private CharController2D _controller;
 	private PlayerMovement _playerMovement;
 	private Vector3 _velocity;
@@ -49,20 +49,23 @@ public class LadderScript : MonoBehaviour {
 			_controller.enabled = true;
 		}
 
-		if (player.transform.position.x >= minX && player.transform.position.x <= maxX) {
-			if (player.transform.position.y >= minY && player.transform.position.y <= maxY) {
-				
-				_canInteract = true;
 
-			} else {
-				_canInteract = false;
-			}
-		} else {
-			_canInteract = false;
+
+	}
+
+	void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Player"))
+		{
+			_canInteract = true;
 		}
 
-
-
+	}
+	void OnTriggerExit2D(Collider2D col){
+		if (col.CompareTag("Player"))
+		{
+			_canInteract = false;
+		}
 	}
 
 	IEnumerator goUpstairs(){
