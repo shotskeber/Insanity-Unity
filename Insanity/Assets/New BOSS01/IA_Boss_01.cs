@@ -26,6 +26,7 @@ public class IA_Boss_01 : MonoBehaviour {
 
     // Boss life
     public int bossHealthPoints = 3;
+    public BoxCollider2D bossCol;
     [Space(5)]
 
     public BossVisibility bossVisibility_script;
@@ -36,7 +37,8 @@ public class IA_Boss_01 : MonoBehaviour {
     public bool phase_2;
     public bool phase_3;
 
-	private bool FSMenable;
+
+    public bool FSMenable;
 
     #endregion
 
@@ -517,6 +519,7 @@ public class IA_Boss_01 : MonoBehaviour {
     {
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
+        bossCol.enabled = false;
         //bossIsRight = true;
         if (!bossIsRight)
         {
@@ -534,6 +537,7 @@ public class IA_Boss_01 : MonoBehaviour {
         phase_1 = false;
         phase_2 = true;
         bossVisibility_script.enabled = true;
+        bossCol.enabled = true;
         Debug.Log("Transition to phase 2.");
         yield return null;
     }
@@ -543,6 +547,7 @@ public class IA_Boss_01 : MonoBehaviour {
     {
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
+        bossCol.enabled = false;
         //bossIsRight = true;
         if (!bossIsRight)
         {
@@ -558,6 +563,7 @@ public class IA_Boss_01 : MonoBehaviour {
         phase_2 = false;
         phase_3 = true;
         bossVisibility_script.enabled = true;
+        bossCol.enabled = true;
         Debug.Log("Transition to phase 3.");
         yield return null;
     }

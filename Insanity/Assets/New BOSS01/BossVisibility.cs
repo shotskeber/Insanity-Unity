@@ -28,6 +28,11 @@ public class BossVisibility : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>().sortingLayerName == "Platforms")
+        {
+            detectingPlayer = false;
+        }
+
         Vector2 direction = new Vector2(1, 0);
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction * rayDir, distanceToSee);
 
@@ -48,9 +53,12 @@ public class BossVisibility : MonoBehaviour
             {
                 if (hit.collider.tag == "Player")
                 {
+                    if(GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>().sortingLayerName == "Player")
+                    {
+                        detectingPlayer = true;
+                    }
                     //boss01_spr.color = Color.red;
                     //playerDetected = true;
-                    detectingPlayer = true;
 					//Debug.Log("Player touched");
                 }
             }

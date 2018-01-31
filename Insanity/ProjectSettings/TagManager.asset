@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - House
+  - Enemy
+  - Laser
+  - Waypoint
+  - Boss
   layers:
   - Default
   - TransparentFX
