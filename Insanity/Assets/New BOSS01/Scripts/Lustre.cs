@@ -31,7 +31,12 @@ public class Lustre : MonoBehaviour {
 		lustreFall.Play();
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
+    public void LustreReverse()
+    {
+        //lustreFall.Play("LustreGoUp");
+    }
+
+    void OnTriggerEnter2D(Collider2D other){
 
         if (fireActive) {
 			if(other.CompareTag("Boss")) {

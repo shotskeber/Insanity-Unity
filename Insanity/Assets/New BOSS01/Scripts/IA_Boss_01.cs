@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class IA_Boss_01 : MonoBehaviour {
 
     #region variables
     [HideInInspector]
     public Transform player;
 
-    public int p3Transitions = 0;
+    public Text textDebug;
+    private int p3Transitions = 0;
     public Transform detector;
     //public float detectorYtr;
 
@@ -56,6 +57,30 @@ public class IA_Boss_01 : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        //DEBUG
+        if(phase1_state == State_P1.STUNED || phase2_state == State_P2.STUNED || phase3_state == State_P3.STUNED)
+        {
+            textDebug.text = "STUNED";
+        }
+        if (phase1_state == State_P1.PATROL || phase2_state == State_P2.PATROL || phase3_state == State_P3.PATROL)
+        {
+            textDebug.text = "PATROL";
+        }
+        if (phase1_state == State_P1.INVESTIGATE || phase2_state == State_P2.INVESTIGATE || phase3_state == State_P3.INVESTIGATE)
+        {
+            textDebug.text = "INVESTIGATE";
+        }
+        if (phase1_state == State_P1.CHASE || phase2_state == State_P2.CHASE || phase3_state == State_P3.CHASE)
+        {
+            textDebug.text = "CHASE";
+        }
+        if (phase1_state == State_P1.ATTACK || phase2_state == State_P2.ATTACK || phase3_state == State_P3.ATTACK)
+        {
+            textDebug.text = "ATTACK";
+        }
+        //DEBUG
+
+
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;
         if (player.GetComponent<SpriteRenderer>().sortingLayerName == "Platforms")
         {
@@ -252,7 +277,7 @@ public class IA_Boss_01 : MonoBehaviour {
                         break;
 
                 case State_P1.INVESTIGATE:
-                    Investigate(0.5f); // 1 = super slow
+                    Investigate(0.3f); // 1 = super slow
                     break;
 
                     case State_P1.ATTACK:
@@ -308,7 +333,7 @@ public class IA_Boss_01 : MonoBehaviour {
                     break;
 
                 case State_P2.INVESTIGATE:
-                    Investigate(0.5f);
+                    Investigate(0.3f);
                     break;
 
                     case State_P2.ATTACK:
@@ -379,7 +404,7 @@ public class IA_Boss_01 : MonoBehaviour {
                         break;
 
                     case State_P3.INVESTIGATE:
-                        Investigate(0.5f);
+                        Investigate(0.3f);
                         break;
 
                     case State_P3.ATTACK:
@@ -477,7 +502,7 @@ public class IA_Boss_01 : MonoBehaviour {
             boss01_animator.SetBool("slow_attack", true);
         }
         //Debug.Log("attackAnimation played");
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0.5f);
 		boss01_animator.SetBool("fast_attack", false);
         boss01_animator.SetBool("slow_attack", false);
 		strongAttack = 0f;
@@ -594,12 +619,12 @@ public class IA_Boss_01 : MonoBehaviour {
         }
         yield return new WaitForSecondsRealtime(1f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[2].transform.position.x, 
-                                                 transform.position.y, transform.position.z), mvtSpeed+1);
+                                                 transform.position.y, transform.position.z), mvtSpeed);
 		yield return new WaitForSecondsRealtime(0.5f);
 		portail_animator.SetBool("portail1Fall", true);
         yield return new WaitForSecondsRealtime(2f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[4].transform.position.x, 
-                                                 transform.position.y, transform.position.z), mvtSpeed+1);
+                                                 transform.position.y, transform.position.z), mvtSpeed);
         phase_1 = false;
         phase_2 = true;
         bossVisibility_script.enabled = true;
@@ -622,12 +647,12 @@ public class IA_Boss_01 : MonoBehaviour {
         }
         yield return new WaitForSecondsRealtime(1f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[5].transform.position.x,
-                                                 transform.position.y, transform.position.z), mvtSpeed + 1);
+                                                 transform.position.y, transform.position.z), mvtSpeed);
         yield return new WaitForSecondsRealtime(0.5f);
         portail_animator.SetBool("portail2Fall", true);
         yield return new WaitForSecondsRealtime(2f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[8].transform.position.x,
-                                                 transform.position.y, transform.position.z), mvtSpeed + 1);
+                                                 transform.position.y, transform.position.z), mvtSpeed);
         phase_2 = false;
         phase_3 = true;
         bossVisibility_script.enabled = true;
