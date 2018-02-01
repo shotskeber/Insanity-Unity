@@ -37,13 +37,11 @@ public class LadderScript : MonoBehaviour {
 	void Update () {
 		if (_canInteract) {
 			if (Input.GetKeyDown(KeyCode.UpArrow)) {
-				_controller.enabled = false;
-				StartCoroutine (goUpstairs ());
-				
-			} else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-				_controller.enabled = false;
-				StartCoroutine (goDownstairs ());
-			} 
+				if (_controller.enabled) {
+					_controller.enabled = false;
+					StartCoroutine (useStairs ());
+				}
+			}
 		}else {
 			
 			_controller.enabled = true;
@@ -68,15 +66,10 @@ public class LadderScript : MonoBehaviour {
 		}
 	}
 
-	IEnumerator goUpstairs(){
+	IEnumerator useStairs(){
 		if (player.transform.position.y < midPoint.position.y) {
 			player.transform.position = finalPos.transform.position;
-		}
-		yield return null;
-	}
-
-	IEnumerator goDownstairs(){
-		if (player.transform.position.y > midPoint.position.y) {
+		} else {
 			player.transform.position = initialPos.transform.position;
 		}
 		yield return null;

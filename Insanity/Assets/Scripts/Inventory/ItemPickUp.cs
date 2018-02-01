@@ -21,7 +21,7 @@ public class ItemPickUp : MonoBehaviour
         }
     }
     // Pick up the item
-    void PickUp()
+	void PickUp()
     {
         Debug.Log("Picking up " + item.name);
         Inventory.instance.Add(item);   // Add to inventory

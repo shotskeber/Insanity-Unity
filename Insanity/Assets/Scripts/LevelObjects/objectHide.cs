@@ -39,11 +39,11 @@ public class objectHide : MonoBehaviour {
 		}
 
 		if (_canInteract) {
-			if (Input.GetKeyDown(KeyCode.H) && !isHidden) {
+			if (Input.GetKeyDown(KeyCode.E) && !isHidden) {
 				_controller.enabled = false;
 				StartCoroutine (takeCover ());
 				isHidden = true;
-			} else if(Input.GetKeyDown(KeyCode.H) && isHidden) {
+			} else if(Input.GetKeyDown(KeyCode.E) && isHidden) {
 				_controller.enabled = false;
 				StartCoroutine (exitCover ());
 				isHidden = false;
