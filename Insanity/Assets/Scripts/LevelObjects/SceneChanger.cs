@@ -1,0 +1,42 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SceneChanger : MonoBehaviour {
+
+	bool _canInteract = false;
+
+
+	// Use this for initialization
+	void Start () {
+		
+
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if (_canInteract) {
+			if (Input.GetKeyDown (KeyCode.UpArrow)) {
+				AutoFade.LoadLevel ("blabla", 0.5f, 0.5f, Color.black);
+			}
+		}
+
+	}
+
+	void OnTriggerEnter2D(Collider2D collision)
+	{
+		
+		if (collision.CompareTag("Player"))
+		{
+			_canInteract = true;
+		}
+
+	}
+	void OnTriggerExit2D(Collider2D col){
+		if (col.CompareTag("Player"))
+		{
+			_canInteract = false;
+		}
+	}
+}
