@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Lustre : MonoBehaviour {
-    
-	
-	public IA_Boss_01 iaBossScript;
-	public bool fireActive = false;
 
+    public Transform wpUP;
+    public Transform wpDOWN;
+
+    public IA_Boss_01 iaBossScript;
+	public bool fireActive = false;
+    public bool lustreIsDown = false;
+    public Collider2D col;
 	public ParticleSystem fireParticles;
+    //public Animator lustreAnimator;
 	private Animation lustreFall;
 	// Use this for initialization
 	void Start () {
@@ -16,24 +20,33 @@ public class Lustre : MonoBehaviour {
 		lustreFall = GetComponent<Animation>();
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         if (fireActive)
         {
             fireParticles.enableEmission = true;
-        } else {
+        }
+        else
+        {
             fireParticles.enableEmission = false;
         }
     }
 
-	public void LustreFall() {
-		lustreFall.Play();
-	}
+
+    public void LustreFall() {
+        lustreFall.Play();
+        lustreIsDown = true;
+        StartCoroutine(Wait());
+    }
 
     public void LustreReverse()
     {
-        //lustreFall.Play("LustreGoUp");
+        this.transform.position = new Vector3(wpUP.position.x, wpUP.position.y, wpUP.position.z);
+        lustreIsDown = false;
+        col.enabled = true;
+        //StartCoroutine(GoUp());
     }
 
     void OnTriggerEnter2D(Collider2D other){
@@ -51,4 +64,43 @@ public class Lustre : MonoBehaviour {
             }
         }
 	}
+
+    public IEnumerator GoDown()
+    {
+
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(wpDOWN.transform.position.x,
+                                 wpDOWN.transform.position.y, wpDOWN.transform.position.z), 1f);
+
+
+        yield return new WaitForSeconds(2f);
+
+        if (this.gameObject.GetComponent<Transform>().position == wpDOWN.transform.position)
+        {
+            lustreIsDown = true;
+            //lustreFall.Play();
+        }
+        yield return null;
+    }
+
+    public IEnumerator GoUp()
+    {
+
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(wpUP.transform.position.x,
+                                 wpUP.transform.position.y, wpUP.transform.position.z), 1f);
+
+            yield return new WaitForSeconds(2f);
+
+        if (this.gameObject.GetComponent<Transform>().position == wpUP.transform.position)
+        {
+            lustreIsDown = false;
+            //lustreFall.Play("LustreGoUp");
+        }
+        yield return null;
+    }
+    public IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2f);
+        col.enabled = false;
+        yield return null;
+    }
 }
