@@ -3,54 +3,78 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DayCycle : MonoBehaviour {
+	private int dayLength;   //in minutes
+	private int dayStart;
+	private int nightStart;   //also in minutes
+	public int currentTime;
+	public float cycleSpeed;
+	private bool isDay;
+	private Vector3 sunPosition;
+	public Light sun;
+	public GameObject earth;
+	public Light nightLight;
+	public Light playerTorch;
 
-	public float amplitude = 2.0f;
-	public float frequency = 0.5f;
-	private float _frequency;
-	private float phase = 0.0f;
 
-	public float timeCycle = 1200;
-	public Light DirLight;
-	public Transform dirTransform;
-	public Transform dirTransformNight;
-
-	private float currentTick = 0;
-	private float sinTime = 0;
-
-	// Use this for initialization
-	void Start () {
-		_frequency = frequency;  
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (frequency != _frequency) 
-			CalcNewFreq();
-		Vector3 v3 = dirTransform.position;
-		v3.x = Mathf.Sin (Time.time * _frequency + phase) * amplitude;
-		dirTransform.position = v3;
-
-		//UpdateTick ();
-		//UpdateSun ();
+	void Start() {
+		dayLength = 1440;
+		dayStart = 300;
+		nightStart = 980;
+		currentTime = 700;
+		StartCoroutine( TimeOfDay ());
+		earth = gameObject;
+		sun.intensity = 1f;
+		nightLight.intensity = 0f;
+		isDay = true;
 	}
 
-	void UpdateSun(){
-		var percentage = currentTick / timeCycle;
-		//dirTransform.Rotate (-1*Vector3.right, 15f * Time.deltaTime); //360 1  1200 
-		//dirTransformNight.Rotate (-1*Vector3.up, 15f * Time.deltaTime);
+	void Update() {
+
+		if (currentTime > 0 && currentTime < dayStart) {
+			isDay =false;
+		} else if (currentTime >= dayStart && currentTime < nightStart) {
+			if (!isDay) {
+				isDay = true;
+				StartCoroutine (ScaleX1(0f, 1f, 10f, sun));
+				StartCoroutine (ScaleX1(0.18f, 0f, 10f, nightLight));
+			}
+		} else if (currentTime >= nightStart && currentTime < dayLength) {
+			if (isDay) {
+				isDay = false;
+				StartCoroutine (ScaleX1(1f, 0f, 10f, sun));
+				StartCoroutine (ScaleX1(0f, 0.18f, 10f, nightLight));
+			}
+		} else if (currentTime >= dayLength) {
+			currentTime = 0;
+		}
+		float currentTimeF = currentTime;
+		float dayLengthF = dayLength;
+		earth.transform.eulerAngles =  new Vector3 (0, 0, (-(currentTimeF / dayLengthF) * 360)+90);
 	}
 
-	void UpdateTick(){
-		currentTick += Time.deltaTime;
-		if (currentTick > timeCycle) {
-			currentTick = 0;
+	IEnumerator TimeOfDay(){
+		while (true) {
+			currentTime += 1;
+			int hours = Mathf.RoundToInt( currentTime / 60);
+			int minutes = currentTime % 60;
+			yield return new WaitForSeconds(1F/cycleSpeed);
 		}
 	}
 
-	void CalcNewFreq() {
-		float curr = (Time.time * _frequency + phase) % (2.0f * Mathf.PI);
-		float next = (Time.time * frequency) % (2.0f * Mathf.PI);
-		phase = curr - next;
-		_frequency = frequency;
+	IEnumerator ScaleX1(float start, float end, float time, Light light)
+	{
+		float lastTime = Time.realtimeSinceStartup;
+		float timer = 0.0f;
+
+		while (timer < time)
+		{
+			light.intensity = Mathf.Lerp(start, end, timer / time);
+			timer += (Time.realtimeSinceStartup - lastTime);
+			lastTime = Time.realtimeSinceStartup;
+			yield return null;
+		}
+		light.intensity = end;
 	}
+
+
 }
