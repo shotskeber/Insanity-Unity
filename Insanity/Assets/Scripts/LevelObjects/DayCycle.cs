@@ -52,7 +52,7 @@ public class DayCycle : MonoBehaviour {
 		earth.transform.eulerAngles =  new Vector3 (0, 0, (-(currentTimeF / dayLengthF) * 360)+90);
 	}
 
-	IEnumerator TimeOfDay(){67
+	IEnumerator TimeOfDay(){
 		while (true) {
 			currentTime += 1;
 			int hours = Mathf.RoundToInt( currentTime / 60);
