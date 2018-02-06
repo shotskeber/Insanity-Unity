@@ -5,7 +5,7 @@ using UnityEngine;
 public class SceneChanger : MonoBehaviour {
 
 	bool _canInteract = false;
-	public int levelInt = 0;
+
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +18,7 @@ public class SceneChanger : MonoBehaviour {
 	void Update () {
 		if (_canInteract) {
 			if (Input.GetKeyDown (KeyCode.UpArrow)) {
-				AutoFade.LoadLevel (levelInt, 0.5f, 0.5f, Color.black);
+				AutoFade.LoadLevel ("blabla", 0.5f, 0.5f, Color.black);
 			}
 		}
 

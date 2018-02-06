@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
@@ -61,7 +61,6 @@ public class AutoFade : MonoBehaviour
 			DrawQuad(aColor,t);
 		}
 		if (m_LevelName != "") {
-			//SceneManager.LoadScene (m_LevelIndex, LoadSceneMode.Single);
 		} else {
 			SceneManager.LoadScene (m_LevelIndex, LoadSceneMode.Single);
 		}
