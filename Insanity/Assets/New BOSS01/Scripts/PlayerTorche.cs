@@ -63,9 +63,7 @@ public class PlayerTorche : MonoBehaviour
         {
             if (other.gameObject.name == "MeuleFoin" && Input.GetKeyDown(KeyCode.E))
             {
-                fireParticles.enableEmission = false;
-				fireActive = false;
-				StartCoroutine(other.GetComponent<MeuleFoinsInflamable>().BurningMeule());
+                StartCoroutine(other.GetComponent<MeuleFoinsInflamable>().BurningMeule());
             }
 
             if (other.gameObject.name == "LitLustre" && Input.GetKeyDown(KeyCode.E))
