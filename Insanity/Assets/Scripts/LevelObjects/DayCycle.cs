@@ -35,14 +35,14 @@ public class DayCycle : MonoBehaviour {
 		} else if (currentTime >= dayStart && currentTime < nightStart) {
 			if (!isDay) {
 				isDay = true;
-				StartCoroutine (ScaleX1(0f, 1f, 10f, sun));
-				StartCoroutine (ScaleX1(0.18f, 0f, 10f, nightLight));
+				StartCoroutine (ScaleX1(0f, 1f, 120f, sun));
+				StartCoroutine (ScaleX1(0.18f, 0f, 50f, nightLight));
 			}
 		} else if (currentTime >= nightStart && currentTime < dayLength) {
 			if (isDay) {
 				isDay = false;
-				StartCoroutine (ScaleX1(1f, 0f, 10f, sun));
-				StartCoroutine (ScaleX1(0f, 0.18f, 10f, nightLight));
+				StartCoroutine (ScaleX1(1f, 0f, 120f, sun));
+				StartCoroutine (ScaleX1(0f, 0.18f, 50f, nightLight));
 			}
 		} else if (currentTime >= dayLength) {
 			currentTime = 0;
