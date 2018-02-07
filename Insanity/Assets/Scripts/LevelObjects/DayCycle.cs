@@ -29,7 +29,14 @@ public class DayCycle : MonoBehaviour {
 	}
 
 	void Update() {
-
+		GameManager.instance.currentTime = currentTime;
+		if (playerTorch) {
+			if (isDay) {
+				playerTorch.intensity = 0f;
+			} else {
+				playerTorch.intensity = 1f;
+			}
+		}
 		if (currentTime > 0 && currentTime < dayStart) {
 			isDay =false;
 		} else if (currentTime >= dayStart && currentTime < nightStart) {
