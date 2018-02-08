@@ -23,7 +23,6 @@ public class InfoPickUp : MonoBehaviour
     // Pick up the item
 	void PickUp()
     {
-        Debug.Log("Picking up " + item.name);
         DialogueInventory.instance.Add(item);   // Add to inventory
 
         //Destroy(gameObject);    // Destroy item from scene
