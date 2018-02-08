@@ -120,7 +120,11 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
+<<<<<<< HEAD
+        postExposure: 1.36
+=======
         postExposure: 0.97
+>>>>>>> 389ea3caaa84214efbd941328e8d3249909da36b
         temperature: 0
         tint: 0
         hueShift: 0
@@ -134,9 +138,9 @@ MonoBehaviour:
       colorWheels:
         mode: 1
         log:
-          slope: {r: 1, g: 1, b: 1, a: 0}
-          power: {r: 1, g: 1, b: 1, a: 0}
-          offset: {r: 1, g: 1, b: 1, a: 0}
+          slope: {r: 1, g: 1, b: 1, a: -0.0000000056826464}
+          power: {r: 1, g: 1, b: 1, a: 0.000000012122978}
+          offset: {r: 1, g: 1, b: 1, a: -3.1570257e-11}
         linear:
           lift: {r: 1, g: 1, b: 1, a: 0}
           gamma: {r: 1, g: 1, b: 1, a: 0}
@@ -298,7 +302,11 @@ MonoBehaviour:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+      intensity: 0.228
+=======
       intensity: 0.391
+>>>>>>> 389ea3caaa84214efbd941328e8d3249909da36b
       smoothness: 0.5
       roundness: 1
       mask: {fileID: 0}
