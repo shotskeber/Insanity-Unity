@@ -44,36 +44,40 @@ GameObject:
   - component: {fileID: 114730624486348838}
   - component: {fileID: 114887801152123788}
   - component: {fileID: 114423125814341396}
-  - component: {fileID: 114923880747053136}
-  - component: {fileID: 114259720725874170}
-  - component: {fileID: 114932764515835698}
   - component: {fileID: 114326148840801284}
-  - component: {fileID: 114508678882948886}
-  - component: {fileID: 114313398860265962}
-  - component: {fileID: 114142938412798454}
-  - component: {fileID: 114181797342132508}
-  - component: {fileID: 114589346999715896}
-  - component: {fileID: 114558095707867106}
-  - component: {fileID: 114624455409890152}
-  - component: {fileID: 114180078119376386}
-  - component: {fileID: 114686934420635748}
-  - component: {fileID: 114575500738456060}
-  - component: {fileID: 114290478171401262}
-  - component: {fileID: 114437478243929144}
-  - component: {fileID: 114182339403172550}
-  - component: {fileID: 114854653738801982}
-  - component: {fileID: 114644049917143446}
-  - component: {fileID: 114615771112609800}
-  - component: {fileID: 114400325581529850}
-  - component: {fileID: 114472597238298962}
-  - component: {fileID: 114795538276142830}
-  - component: {fileID: 114166623755835802}
-  - component: {fileID: 114170444068820114}
-  - component: {fileID: 114081295561927412}
-  - component: {fileID: 114913500818992344}
   - component: {fileID: 114549659346554986}
-  - component: {fileID: 114986933171229998}
   - component: {fileID: 114642213009279156}
+  - component: {fileID: 114267906905195490}
+  - component: {fileID: 114804442456647648}
+  - component: {fileID: 114179566987414494}
+  - component: {fileID: 114343298251019616}
+  - component: {fileID: 114067165554439468}
+  - component: {fileID: 114033099792462346}
+  - component: {fileID: 114835629058468724}
+  - component: {fileID: 114273662996291836}
+  - component: {fileID: 114964062965020080}
+  - component: {fileID: 114297843396351652}
+  - component: {fileID: 114155774815932626}
+  - component: {fileID: 114817741656073348}
+  - component: {fileID: 114463589411083068}
+  - component: {fileID: 114101658945038654}
+  - component: {fileID: 114030410081959912}
+  - component: {fileID: 114105152890473794}
+  - component: {fileID: 114167867437117100}
+  - component: {fileID: 114700439325365672}
+  - component: {fileID: 114080446180907048}
+  - component: {fileID: 114076784229117996}
+  - component: {fileID: 114967552263246134}
+  - component: {fileID: 114623407675481590}
+  - component: {fileID: 114229335869392980}
+  - component: {fileID: 114501957567256990}
+  - component: {fileID: 114163208686783044}
+  - component: {fileID: 114734276651313778}
+  - component: {fileID: 114548603757065654}
+  - component: {fileID: 114884656358850870}
+  - component: {fileID: 114868309058001872}
+  - component: {fileID: 114358856703371624}
+  - component: {fileID: 114534700931860542}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -162,7 +166,85 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14.227823, y: 9.13}
   m_EdgeRadius: 0
---- !u!114 &114081295561927412
+--- !u!114 &114030410081959912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 94.12964
+    y: 464.29987
+    width: 199
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 105
+  blockName: "Infos \xE9v\xE8nements r\xE9cents"
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 114105152890473794}
+  - {fileID: 114167867437117100}
+  - {fileID: 114700439325365672}
+--- !u!114 &114033099792462346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 288.12964
+    y: 263.29987
+    width: 180
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 91
+  blockName: "R\xE9soudre les meurtres"
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 114080446180907048}
+  - {fileID: 114076784229117996}
+  - {fileID: 114967552263246134}
+--- !u!114 &114067165554439468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 90
+  indentLevel: 0
+  text: "Je suis ici pour r\xE9soudre les meurtres justement"
+  description: 
+  targetBlock: {fileID: 114033099792462346}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &114076784229117996
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -173,10 +255,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 81
+  itemId: 110
   indentLevel: 0
-  storyText: "Oui. Un homme habill\xE9 d'une mani\xE8re ridicule et qui vie dans un
-    vieux batiment en pierre, dans le quartier qui fait peur."
+  storyText: "Ah, disons que je m'attendais pas \xE0 cette r\xE9ponse.\n"
   description: 
   character: {fileID: 114330439848050342}
   portrait: {fileID: 0}
@@ -189,6 +270,87 @@ MonoBehaviour:
   stopVoiceover: 0
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &114080446180907048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 109
+  indentLevel: 0
+  description: Stop
+  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
+  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerMovement
+  targetMethod: StopMovement
+  targetMethodText: 'StopMovement (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &114101658945038654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 104
+  indentLevel: 0
+  text: "\xC0 mon tour de poser des questions, vous avez des informations sur les
+    r\xE9cents \xE9v\xE9nements ?  "
+  description: 
+  targetBlock: {fileID: 114030410081959912}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &114105152890473794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 106
+  indentLevel: 0
+  description: Stop
+  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
+  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerMovement
+  targetMethod: StopMovement
+  targetMethodText: 'StopMovement (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &114129800341480610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,31 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueToSay: 
---- !u!114 &114142938412798454
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 62
-  indentLevel: 0
-  text: Vacances.
-  description: 
-  targetBlock: {fileID: 114558095707867106}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &114166623755835802
+--- !u!114 &114155774815932626
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -238,21 +376,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 158.61847
-    y: 595.2271
-    width: 120
+    x: -65.87036
+    y: 372.29987
+    width: 141
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 79
-  blockName: "Le cur\xE9"
+  itemId: 101
+  blockName: Pas vos affaires
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114170444068820114}
-  - {fileID: 114081295561927412}
-  - {fileID: 114913500818992344}
---- !u!114 &114170444068820114
+  - {fileID: 114817741656073348}
+  - {fileID: 114463589411083068}
+  - {fileID: 114101658945038654}
+--- !u!114 &114163208686783044
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -260,26 +398,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1178344470298088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 80
+  itemId: 115
   indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 0}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &114180078119376386
+  text: "Vous auriez entendu quelque chose \xE0 propos des r\xE9cents \xE9v\xE9nements
+    ? "
+  description: 
+  targetBlock: {fileID: 114030410081959912}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &114167867437117100
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -290,9 +426,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 67
+  itemId: 107
   indentLevel: 0
-  storyText: "Vous avez quelque chose \xE0 cacher ?"
+  storyText: "J'ai rien \xE0 ajouter de plus que ce que vous trouverez dans le journal,
+    essayez d'aller voir le cur\xE9, il doit encore se trouver dans son antre quelque
+    part au sud ouest du village. \n"
   description: 
   character: {fileID: 114330439848050342}
   portrait: {fileID: 0}
@@ -305,7 +443,62 @@ MonoBehaviour:
   stopVoiceover: 0
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &114181797342132508
+--- !u!114 &114179566987414494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 88
+  indentLevel: 0
+  storyText: "Vous venez faire quoi ici ? C'est pas une ville o\xF9 il y a foule de
+    choses \xE0 faire, c'est m\xEAme plut\xF4t dangereux."
+  description: 
+  character: {fileID: 114330439848050342}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 0
+  stopVoiceover: 0
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &114229335869392980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 113
+  indentLevel: 0
+  description: Stop
+  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
+  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerMovement
+  targetMethod: StopMovement
+  targetMethodText: 'StopMovement (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &114267906905195490
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -318,45 +511,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -29
-    y: 323
-    width: 156
+    x: 150.12964
+    y: 178.29985
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 63
-  blockName: Ca vous regarde ?
+  itemId: 86
+  blockName: Faire quoi
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114624455409890152}
-  - {fileID: 114180078119376386}
-  - {fileID: 114686934420635748}
---- !u!114 &114182339403172550
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 72
-  indentLevel: 0
-  text: Et donc ?
-  description: 
-  targetBlock: {fileID: 114575500738456060}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &114259720725874170
+  - {fileID: 114804442456647648}
+  - {fileID: 114179566987414494}
+  - {fileID: 114343298251019616}
+  - {fileID: 114067165554439468}
+--- !u!114 &114273662996291836
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -367,10 +537,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 35
+  itemId: 98
   indentLevel: 0
   description: Stop
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -383,34 +554,7 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &114290478171401262
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 70
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 0}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &114313398860265962
+--- !u!114 &114297843396351652
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -421,11 +565,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 61
+  itemId: 100
   indentLevel: 0
-  text: Les meurtres.
+  text: 'C''est pas vos affaires '
   description: 
-  targetBlock: {fileID: 114589346999715896}
+  targetBlock: {fileID: 114155774815932626}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -448,7 +592,8 @@ MonoBehaviour:
   itemId: 59
   indentLevel: 0
   description: marche
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -479,6 +624,56 @@ MonoBehaviour:
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
+--- !u!114 &114343298251019616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 89
+  indentLevel: 0
+  text: "Qu'est ce que \xE7a peut vous faire ? "
+  description: 
+  targetBlock: {fileID: 114835629058468724}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &114358856703371624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 122
+  indentLevel: 0
+  storyText: "Toujours rien de plus \xE0 vous dire.\n"
+  description: 
+  character: {fileID: 114330439848050342}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 0
+  stopVoiceover: 0
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &114366182466479570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -492,33 +687,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueToSay: Commencer l'aventure
   _canInteract: 1
---- !u!114 &114400325581529850
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 76
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 0}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &114423125814341396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -532,14 +700,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 161
-    y: 677
+    x: 135.46815
+    y: 562.1057
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 55
-  blockName: Laisse
+  blockName: '...'
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -564,14 +732,13 @@ MonoBehaviour:
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: Start
+  blockName: "Qui \xEAtes vous ?"
   description: 
   eventHandler: {fileID: 114730624486348838}
   commandList:
   - {fileID: 114642213009279156}
-  - {fileID: 114986933171229998}
   - {fileID: 114549659346554986}
---- !u!114 &114437478243929144
+--- !u!114 &114463589411083068
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -582,9 +749,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 71
+  itemId: 103
   indentLevel: 0
-  storyText: Ah.
+  storyText: "Wow, je ne vous veux rien du tout l'\xE9trangers, je suis juste curieux
+    de votre pr\xE9sence \xE0 Durleigh !\n"
   description: 
   character: {fileID: 114330439848050342}
   portrait: {fileID: 0}
@@ -597,7 +765,7 @@ MonoBehaviour:
   stopVoiceover: 0
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &114472597238298962
+--- !u!114 &114501957567256990
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -608,10 +776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 77
+  itemId: 114
   indentLevel: 0
-  storyText: "En fait, vous n'\xEAtes pas aussi int\xE9ressant que pr\xE9vu. M\xEAme
-    le cureton est plus int\xE9ressant quand il me parle des r\xE9cents \xE9v\xE8nements."
+  storyText: 'A rien en particulier '
   description: 
   character: {fileID: 114330439848050342}
   portrait: {fileID: 0}
@@ -624,7 +791,7 @@ MonoBehaviour:
   stopVoiceover: 0
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &114508678882948886
+--- !u!114 &114534700931860542
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -635,11 +802,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 60
+  itemId: 123
   indentLevel: 0
-  text: "En quoi \xE7a vous regarde ?"
+  text: '...'
   description: 
-  targetBlock: {fileID: 114181797342132508}
+  targetBlock: {fileID: 114548603757065654}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -648,6 +815,31 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &114548603757065654
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 621.1551
+    y: 211.37437
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 124
+  blockName: '... D2'
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 114884656358850870}
 --- !u!114 &114549659346554986
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -661,9 +853,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  text: Qu'est-ce que vous voulez ?
+  text: "Qui \xEAtes-vous ?"
   description: 
-  targetBlock: {fileID: 114932764515835698}
+  targetBlock: {fileID: 114267906905195490}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -672,7 +864,7 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &114558095707867106
+--- !u!114 &114623407675481590
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -685,125 +877,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 326
-    y: 324
-    width: 120
+    x: 301.65482
+    y: 358.19385
+    width: 214
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 65
-  blockName: Vacance
+  itemId: 112
+  blockName: A quoi vous vous attendiez ?
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114854653738801982}
-  - {fileID: 114644049917143446}
-  - {fileID: 114615771112609800}
---- !u!114 &114575500738456060
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 160.6805
-    y: 501.41202
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 69
-  blockName: Et alors ?
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 114400325581529850}
-  - {fileID: 114472597238298962}
-  - {fileID: 114795538276142830}
---- !u!114 &114589346999715896
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 162
-    y: 324
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 64
-  blockName: Meurtres
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 114290478171401262}
-  - {fileID: 114437478243929144}
-  - {fileID: 114182339403172550}
---- !u!114 &114615771112609800
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 75
-  indentLevel: 0
-  text: Et donc ?
-  description: 
-  targetBlock: {fileID: 114575500738456060}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &114624455409890152
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 66
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 0}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
+  - {fileID: 114229335869392980}
+  - {fileID: 114501957567256990}
+  - {fileID: 114163208686783044}
 --- !u!114 &114642213009279156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -831,33 +918,7 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &114644049917143446
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 74
-  indentLevel: 0
-  storyText: Ah.
-  description: 
-  character: {fileID: 114330439848050342}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 0
-  stopVoiceover: 0
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &114686934420635748
+--- !u!114 &114700439325365672
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -868,11 +929,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 68
+  itemId: 108
   indentLevel: 0
-  text: Et alors ?
+  text: '...'
   description: 
-  targetBlock: {fileID: 114575500738456060}
+  targetBlock: {fileID: 114423125814341396}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -894,7 +955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 114425431574013212}
   message: Commencer l'aventure
---- !u!114 &114795538276142830
+--- !u!114 &114734276651313778
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -902,23 +963,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1178344470298088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 78
-  indentLevel: 0
-  text: "Le cur\xE9 ?"
+  nodeRect:
+    serializedVersion: 2
+    x: 587.65515
+    y: 98.874374
+    width: 188
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 116
+  blockName: "Rien de plus \xE0 vous dire"
   description: 
-  targetBlock: {fileID: 114166623755835802}
-  hideIfVisited: 0
-  interactable:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  setMenuDialog: {fileID: 0}
-  hideThisOption:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &114854653738801982
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 114868309058001872}
+  - {fileID: 114358856703371624}
+  - {fileID: 114534700931860542}
+--- !u!114 &114804442456647648
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -929,10 +993,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 73
+  itemId: 87
   indentLevel: 0
   description: Stop
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -943,6 +1008,116 @@ MonoBehaviour:
   saveReturnValue: 0
   returnValueVariableKey: 
   returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &114817741656073348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 102
+  indentLevel: 0
+  description: Stop
+  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
+  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerMovement
+  targetMethod: StopMovement
+  targetMethodText: 'StopMovement (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &114835629058468724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -116.87036
+    y: 266.29987
+    width: 246
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 92
+  blockName: "Qu'est-ce que \xE7a peut vous faire ?"
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 114273662996291836}
+  - {fileID: 114964062965020080}
+  - {fileID: 114297843396351652}
+--- !u!114 &114868309058001872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 121
+  indentLevel: 0
+  description: Stop
+  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
+  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: PlayerMovement
+  targetMethod: StopMovement
+  targetMethodText: 'StopMovement (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &114884656358850870
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 120
+  indentLevel: 0
+  description: marche
+  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
+  targetComponentAssemblyName: 
+  targetComponentFullname: 
+  targetComponentText: 
+  targetMethod: 
+  targetMethodText: 
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: 
   showInherited: 0
   callMode: 0
 --- !u!114 &114887801152123788
@@ -971,7 +1146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 267.87036, y: 9.70015}
+  scrollPos: {x: 134.34488, y: 104.125626}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -982,10 +1157,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 114425431574013212}
-  selectedCommands:
-  - {fileID: 114642213009279156}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 114887801152123788}
   description: 
@@ -999,7 +1172,33 @@ MonoBehaviour:
   - what
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
---- !u!114 &114913500818992344
+--- !u!114 &114964062965020080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178344470298088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 99
+  indentLevel: 0
+  storyText: "Vous avez quelque chose \xE0 cacher ?"
+  description: 
+  character: {fileID: 114330439848050342}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 0
+  waitForClick: 0
+  stopVoiceover: 0
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &114967552263246134
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1010,11 +1209,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 82
+  itemId: 111
   indentLevel: 0
-  text: Je vous laisse
+  text: 'A quoi vous vous attendiez ? '
   description: 
-  targetBlock: {fileID: 114423125814341396}
+  targetBlock: {fileID: 114623407675481590}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -1023,88 +1222,6 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &114923880747053136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 36
-  indentLevel: 0
-  storyText: Je ne sais pas encore. Que venez-vous faire dans cette ville campagnarde
-    ?
-  description: 
-  character: {fileID: 114330439848050342}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 0
-  stopVoiceover: 0
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &114932764515835698
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 134
-    y: 225
-    width: 155
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 31
-  blockName: ville campagnarde
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 114259720725874170}
-  - {fileID: 114923880747053136}
-  - {fileID: 114508678882948886}
-  - {fileID: 114313398860265962}
-  - {fileID: 114142938412798454}
---- !u!114 &114986933171229998
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1178344470298088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 84
-  indentLevel: 0
-  storyText: Ah bah enfin.
-  description: 
-  character: {fileID: 114330439848050342}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 0
-  waitForClick: 0
-  stopVoiceover: 0
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!212 &212569366185990152
 SpriteRenderer:
   m_ObjectHideFlags: 1
