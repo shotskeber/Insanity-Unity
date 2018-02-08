@@ -9,6 +9,7 @@ public class DialogueInventoryUI : MonoBehaviour
 
     public GameObject inventoryUI;  // The entire UI
     public Transform itemsParent;   // The parent object of all the items
+    public Button firstSelection;
 
     DialogueInventory inventory;    // Our current inventory
 
@@ -23,6 +24,7 @@ public class DialogueInventoryUI : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.N))
         {
+            firstSelection.Select();
             inventoryUI.SetActive(!inventoryUI.activeSelf);
             UpdateUI();
         }

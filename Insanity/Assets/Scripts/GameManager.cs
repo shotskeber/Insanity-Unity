@@ -29,7 +29,11 @@ public class GameManager : MonoBehaviour {
 	}
 
 
-
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
 	//Update is called every frame.
 	void Update()
