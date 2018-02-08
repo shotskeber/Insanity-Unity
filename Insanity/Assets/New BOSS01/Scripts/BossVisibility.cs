@@ -60,6 +60,9 @@ public class BossVisibility : MonoBehaviour
                     //boss01_spr.color = Color.red;
                     //playerDetected = true;
 					//Debug.Log("Player touched");
+                } else
+                {
+                    detectingPlayer = false;
                 }
             }
         }

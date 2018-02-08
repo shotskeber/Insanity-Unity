@@ -8,6 +8,9 @@ public class IA_Boss_01 : MonoBehaviour {
     [HideInInspector]
     public Transform player;
 
+    public Transform playerSpawn;
+    public Boss01_TransitionScreenFade transitionScreenFading;
+
     public Text textDebug;
     private int p3Transitions = 0;
     public Transform detector;
@@ -18,7 +21,7 @@ public class IA_Boss_01 : MonoBehaviour {
 
     public bool bossIsRight;
 	public Animator boss01_animator;
-	public Animator portail_animator;
+	//public Animator portail_animator;
     public bool playerDetected;
     public bool strongAtk;
 
@@ -32,6 +35,7 @@ public class IA_Boss_01 : MonoBehaviour {
     // Boss life
     public int bossHealthPoints = 3;
     public BoxCollider2D bossCol;
+    public Collider2D bossContactCol;
     [Space(5)]
 
     public BossVisibility bossVisibility_script;
@@ -82,12 +86,18 @@ public class IA_Boss_01 : MonoBehaviour {
 
 
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;
+        Collider2D playerCol = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
         if (player.GetComponent<SpriteRenderer>().sortingLayerName == "Platforms")
         {
-            this.gameObject.GetComponent<Collider2D>().enabled = false;
+            //this.gameObject.GetComponent<Collider2D>().enabled = false;
+            Physics2D.IgnoreCollision(playerCol, bossCol, true);
+            Physics2D.IgnoreCollision(playerCol, bossContactCol, true);
         } else
         {
-            this.gameObject.GetComponent<Collider2D>().enabled = true;
+            //this.gameObject.GetComponent<Collider2D>().enabled = true;
+            Physics2D.IgnoreCollision(playerCol, bossCol, false);
+            Physics2D.IgnoreCollision(playerCol, bossContactCol, false);
+
         }
         if (bossHealthPoints == 2)
         {
@@ -106,6 +116,8 @@ public class IA_Boss_01 : MonoBehaviour {
 
         if (isStuned)
         {
+            Physics2D.IgnoreCollision(playerCol, bossCol, true);
+            Physics2D.IgnoreCollision(playerCol, bossContactCol, true);
             stunParticles.SetActive(true);
             if (phase_1)
             {
@@ -121,6 +133,7 @@ public class IA_Boss_01 : MonoBehaviour {
             }
         } else
         {
+
             stunParticles.SetActive(false);
         }
     }
@@ -149,7 +162,9 @@ public class IA_Boss_01 : MonoBehaviour {
 
 		if (bossVisibility_script.detectingPlayer)
         {
-			detector.GetComponent<Transform>().localScale += new Vector3(0, Time.deltaTime * sensibility, 0);
+            float dist = Vector3.Distance(player.position, transform.position);
+
+			detector.GetComponent<Transform>().localScale += new Vector3(0, Time.deltaTime * (1/ dist)*10, 0);
 			//boss01_spr.color = Color.Lerp(Color.white, Color.red, sensibility);
         } else {
             //detectorYtr = 0.1f;
@@ -491,7 +506,8 @@ public class IA_Boss_01 : MonoBehaviour {
         //random between two attack option
         float strongAttack = Random.Range(-1f, 1f);
 
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0.5f);
+
         if (strongAttack > strongAttackOdds)
         {
             boss01_animator.SetBool("fast_attack", true);
@@ -570,6 +586,7 @@ public class IA_Boss_01 : MonoBehaviour {
     {
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
+        gameObject.SetActive(false);
         Debug.Log("Boss 01 is defeted.");
         yield return null;
     }
@@ -605,23 +622,30 @@ public class IA_Boss_01 : MonoBehaviour {
         yield return null;
     }
 
-    //  Transition 1 Cinematic
+    //  Transition 1 Cinematic: fade in, boss goto wp, player tp to wp, phase2 enabled, fade out
     IEnumerator Phase_1_EndingCinematic()
     {
+        //fade & boss is invincible 
+        transitionScreenFading._fade = true;
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
         bossCol.enabled = false;
+
         //bossIsRight = true;
         if (!bossIsRight)
         {
             bossIsRight = true;
             Flip();
         }
+        //wait then go in front of the gate : this happen when 100% black out
         yield return new WaitForSecondsRealtime(1f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[2].transform.position.x, 
                                                  transform.position.y, transform.position.z), mvtSpeed);
-		yield return new WaitForSecondsRealtime(0.5f);
-		portail_animator.SetBool("portail1Fall", true);
+        player.transform.position = new Vector2(playerSpawn.position.x, player.transform.position.y);
+        yield return new WaitForSecondsRealtime(0.5f);
+        //this is played when black out, no need visual just sounds clue
+        //portail_animator.SetBool("portail1Fall", true);
+        
         yield return new WaitForSecondsRealtime(2f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[4].transform.position.x, 
                                                  transform.position.y, transform.position.z), mvtSpeed);
@@ -630,12 +654,16 @@ public class IA_Boss_01 : MonoBehaviour {
         bossVisibility_script.enabled = true;
         bossCol.enabled = true;
         Debug.Log("Transition to phase 2.");
+        transitionScreenFading._fade = false;
+
         yield return null;
     }
 
     //  Transition 2 Cinematic
     IEnumerator Phase_2_EndingCinematic()
-    {
+    { 
+        //fade & boss is invincible 
+        transitionScreenFading._fade = true;
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
         bossCol.enabled = false;
@@ -648,8 +676,9 @@ public class IA_Boss_01 : MonoBehaviour {
         yield return new WaitForSecondsRealtime(1f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[5].transform.position.x,
                                                  transform.position.y, transform.position.z), mvtSpeed);
+        player.transform.position = new Vector2(playerSpawn.position.x, player.transform.position.y);
         yield return new WaitForSecondsRealtime(0.5f);
-        portail_animator.SetBool("portail2Fall", true);
+        //portail_animator.SetBool("portail2Fall", true);
         yield return new WaitForSecondsRealtime(2f);
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(waypoints[8].transform.position.x,
                                                  transform.position.y, transform.position.z), mvtSpeed);
@@ -658,6 +687,7 @@ public class IA_Boss_01 : MonoBehaviour {
         bossVisibility_script.enabled = true;
         bossCol.enabled = true;
         Debug.Log("Transition to phase 3.");
+        transitionScreenFading._fade = false;
         yield return null;
     }
 
