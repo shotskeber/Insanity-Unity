@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Tutoriel.unity
+- path: Assets/Phase Preparation/Phase_preparation.unity
   isLoaded: 1
   isActive: 1
