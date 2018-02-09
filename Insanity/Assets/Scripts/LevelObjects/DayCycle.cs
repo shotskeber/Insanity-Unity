@@ -26,11 +26,20 @@ public class DayCycle : MonoBehaviour {
 		sun.intensity = 1f;
 		nightLight.intensity = 0f;
 		isDay = true;
-	}
+
+        if (GameManager.instance.currentTime != currentTime)
+        {
+            currentTime = GameManager.instance.currentTime;
+            sun.intensity = GameManager.instance.lightGeneralInt;
+            nightLight.intensity = GameManager.instance.lightNightInt;
+        }
+    }
 
 	void Update() {
 		GameManager.instance.currentTime = currentTime;
-		if (playerTorch) {
+        GameManager.instance.lightGeneralInt = sun.intensity;
+        GameManager.instance.lightNightInt = nightLight.intensity;
+        if (playerTorch) {
 			if (isDay) {
 				playerTorch.intensity = 0f;
 			} else {

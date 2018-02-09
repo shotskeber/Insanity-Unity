@@ -179,14 +179,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 94.12964
-    y: 464.29987
-    width: 199
+    x: -27.870361
+    y: 478.29987
+    width: 461
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 105
-  blockName: "Infos \xE9v\xE8nements r\xE9cents"
+  blockName: "Vous auriez entendu quelque chose \xE0 propos des r\xE9cents \xE9v\xE9nements
+    ?"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -208,12 +209,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 288.12964
     y: 263.29987
-    width: 180
+    width: 326
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 91
-  blockName: "R\xE9soudre les meurtres"
+  blockName: "Je suis ici pour r\xE9soudre les meurtres justement"
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -378,12 +379,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: -65.87036
     y: 372.29987
-    width: 141
+    width: 174
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 101
-  blockName: Pas vos affaires
+  blockName: C'est pas vos affaires
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -511,14 +512,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 150.12964
-    y: 178.29985
-    width: 120
+    x: -123.87036
+    y: 180.29985
+    width: 672
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 86
-  blockName: Faire quoi
+  blockName: "Vous venez faire quoi ici ? C'est pas une ville o\xF9 il y a foule de
+    choses \xE0 faire, c'est m\xEAme plut\xF4t dangereux."
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -732,7 +734,7 @@ MonoBehaviour:
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: "Qui \xEAtes vous ?"
+  blockName: "Qui \xEAtes-vous ?"
   description: 
   eventHandler: {fileID: 114730624486348838}
   commandList:
@@ -828,8 +830,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 621.1551
-    y: 211.37437
+    x: 648.1551
+    y: 204.37437
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -970,12 +972,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 587.65515
     y: 98.874374
-    width: 188
+    width: 243
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 116
-  blockName: "Rien de plus \xE0 vous dire"
+  blockName: "Toujours rien de plus \xE0 vous dire."
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -1051,14 +1053,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -116.87036
+    x: -115.87036
     y: 266.29987
-    width: 246
+    width: 245
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 92
-  blockName: "Qu'est-ce que \xE7a peut vous faire ?"
+  blockName: "Qu'est ce que \xE7a peut vous faire ?"
   description: 
   eventHandler: {fileID: 0}
   commandList:
