@@ -8,9 +8,12 @@ public class GameManager : MonoBehaviour {
 
 	public int currentTime = 700;
 	public bool isTalking = false;
+    public int heldItem = 0;
+    public float lightGeneralInt = 1f;
+    public float lightNightInt = 0f;
 
-	//Awake is always called before any Start functions
-	void Awake()
+    //Awake is always called before any Start functions
+    void Awake()
 	{
 		//Check if instance already exists
 		if (instance == null)
@@ -31,8 +34,8 @@ public class GameManager : MonoBehaviour {
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+       /* Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;*/
     }
 
 	//Update is called every frame.
