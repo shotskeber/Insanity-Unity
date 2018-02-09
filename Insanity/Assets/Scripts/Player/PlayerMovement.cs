@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Prime31;
+using Com.LuisPedroFonseca.ProCamera2D;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -37,6 +38,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Start(){
 		runSpeed = 4f;
+
 	}
 
 	#region Event Listeners
@@ -59,6 +61,12 @@ public class PlayerMovement : MonoBehaviour {
 			runSpeed = 8f;
 		} else {
 			runSpeed = 4f;
+		}
+
+		if (directionP == 1) {
+			ProCamera2D.Instance.OverallOffset = new Vector2 (10f, 2f);
+		} else {
+			ProCamera2D.Instance.OverallOffset = new Vector2 (-10f, 2f);
 		}
 
 		if (Input.GetKeyDown (KeyCode.H)) {
