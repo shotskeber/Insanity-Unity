@@ -14,7 +14,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 62
-    y: 42
+    y: 51
     width: 1858
     height: 1038
   m_ShowMode: 4
@@ -65,7 +65,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 2 by 3
+  m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_MinSize: {x: 913, y: 271}
   m_MaxSize: {x: 22008, y: 10021}
   vertical: 0
-  controlID: 447
+  controlID: 133
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -263,33 +263,33 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1166
-    y: 91
+    y: 100
     width: 241
     height: 967
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: c243faff5c54fdff220bfeff263dfeffa8a4feff2217ffff5a1fffff4a8bffffb093ffff0c9cffffe4a2ffffe0b5ffff1abeffffc0f9ffff00000000143f00004c3f0000583f0000783f00007e3f0000a03f0000d63f0000
+    m_ExpandedIDs: 62edffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: pouce_gauche
-      m_OriginalName: pouce_gauche
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 16194
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 4
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
   m_ExpandedScenes:
-  - maincharacter_hiddle
+  - Tutoriel
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1645
-    y: 91
+    y: 100
     width: 275
     height: 967
   m_ScrollPosition: {x: 0, y: 0}
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1411
-    y: 91
+    y: 100
     width: 230
     height: 967
   m_SearchFilter:
@@ -363,20 +363,18 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders:
-    - Assets
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders:
-  - Assets
+  m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\arthur.brosson\Documents\GitHub\Insanity-Unity\Insanity
+  m_LastProjectPath: D:\Documents\GitHub\Insanity-Unity\Insanity
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: f02d0000
     m_LastClickedID: 11760
-    m_ExpandedIDs: f02d000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000005e4200006e420000024300005e480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -404,7 +402,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f02d0000
+    m_ExpandedIDs: 000000005e4200006e420000024300005e480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -558,7 +556,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 62
-    y: 91
+    y: 100
     width: 1100
     height: 967
   m_SceneLighting: 1
