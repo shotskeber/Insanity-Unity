@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class ButtonNavigation : MonoBehaviour {
 
-	public int index = 0;
+	public int index = 3;
 	public int journauxIndex = 0;
     public int journalPagesIndex = 0;
 	public GameObject[] outlines;
 	public GameObject[] objects;
 	public bool _canInteract;
     public AutoFlip bookFlipScript;
-	//public int objs = 5;
-	//public float xOffset = 1f;
+    public Book bookScript;
+    //public int objs = 5;
+    //public float xOffset = 1f;
+
+    public SkillTree skillTree_Script;
 
 	// Use this for initialization
 	void Start () {
@@ -24,16 +27,14 @@ public class ButtonNavigation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
-
         OnSelected();
 		OnClick();
 
-		if(objects[3].activeInHierarchy == true){
+		if(objects[3].activeInHierarchy == true){ // coupures de journaux
 			CoupuresJournauxSelection();
 		}
 
-        if (objects[1].activeInHierarchy == true)
+        if (objects[1].activeInHierarchy == true) // journal
         {
             JournalSelection();
         }
@@ -54,7 +55,9 @@ public class ButtonNavigation : MonoBehaviour {
 		} else {
 			if(Input.GetKeyDown (KeyCode.Escape)){
 				_canInteract = true;
-				objects[0].SetActive(false);
+                bookScript.currentPage = 0;
+                skillTree_Script.skillIndex = 0;
+                //objects[0].SetActive(false);
 				objects[1].SetActive(false);
 				objects[2].SetActive(false);
 				objects[3].SetActive(false);
@@ -65,11 +68,11 @@ public class ButtonNavigation : MonoBehaviour {
 
     void JournalSelection()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow)) { 
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) { 
             bookFlipScript.FlipLeftPage();
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             bookFlipScript.FlipRightPage();
         }
@@ -83,13 +86,14 @@ public class ButtonNavigation : MonoBehaviour {
         }
         else if (journauxIndex == 1)
         {
-            objects[3].GetComponent<RectTransform>().anchoredPosition = new Vector2(-540f, 0f);
+            
+            objects[3].GetComponent<RectTransform>().anchoredPosition = new Vector2(-320f, 0);
         }
         else if (journauxIndex == 2)
         {
-            objects[3].GetComponent<RectTransform>().anchoredPosition = new Vector2(-1080f, 0f);
+            objects[3].GetComponent<RectTransform>().anchoredPosition = new Vector2(-640f, 0);
         }
-        float coupuresJPos = objects[3].GetComponent<RectTransform>().position.x;
+        float coupuresJPos = objects[3].GetComponent<RectTransform>().anchoredPosition.x;
 			if(Input.GetKeyDown (KeyCode.RightArrow)){
 				journauxIndex++;
 
@@ -111,40 +115,46 @@ public class ButtonNavigation : MonoBehaviour {
 			}
 	}
 
+    void StartNextPhase()
+    {
+        Debug.Log("Start Next Phase");
+    }
 
 	void OnClick(){
 		if(Input.GetKeyDown (KeyCode.E)){
 		_canInteract = false;
-			if(index == 0) {
-				objects[0].SetActive(true);
-				objects[1].SetActive(false);
+			if(index == 0) { // next phase
+                StartNextPhase();
+                _canInteract = true;
+                //objects[0].SetActive(false);
+                objects[1].SetActive(false);
 				objects[2].SetActive(false);
 				objects[3].SetActive(false);
 				objects[4].SetActive(false);
 				//Debug.Log("1");
 			} else if(index == 1) { // journal
-				objects[0].SetActive(false);
+				//objects[0].SetActive(false);
 				objects[1].SetActive(true);
 				objects[2].SetActive(false);
 				objects[3].SetActive(false);
 				objects[4].SetActive(false);
 				//Debug.Log("2");
-			} else if(index == 2) {
-				objects[0].SetActive(false);
+			} else if(index == 2) { // map
+				//objects[0].SetActive(false);
 				objects[1].SetActive(false);
 				objects[2].SetActive(true);
 				objects[3].SetActive(false);
 				objects[4].SetActive(false);
 				//Debug.Log("3");
 			} else if(index == 3) { // coupures de journaux
-				objects[0].SetActive(false);
+				//objects[0].SetActive(false);
 				objects[1].SetActive(false);
 				objects[2].SetActive(false);
 				objects[3].SetActive(true);
 				objects[4].SetActive(false);
 				//Debug.Log("4");
-			} else if(index == 4) {
-				objects[0].SetActive(false);
+			} else if(index == 4) { // medaillon
+				//objects[0].SetActive(false);
 				objects[1].SetActive(false);
 				objects[2].SetActive(false);
 				objects[3].SetActive(false);
@@ -155,7 +165,7 @@ public class ButtonNavigation : MonoBehaviour {
 	}
 
 	void OnSelected() {
-			if(index == 0) {
+			if(index == 0) { // next phase
 			outlines[0].SetActive(true);
 			outlines[1].SetActive(false);
 			outlines[2].SetActive(false);
@@ -167,7 +177,7 @@ public class ButtonNavigation : MonoBehaviour {
 			outlines[2].SetActive(false);
 			outlines[3].SetActive(false);
 			outlines[4].SetActive(false);
-		} else if(index == 2) {
+		} else if(index == 2) { // map
 			outlines[0].SetActive(false);
 			outlines[1].SetActive(false);
 			outlines[2].SetActive(true);
@@ -179,7 +189,7 @@ public class ButtonNavigation : MonoBehaviour {
 			outlines[2].SetActive(false);
 			outlines[3].SetActive(true);
 			outlines[4].SetActive(false);
-		} else if(index == 4) {
+		} else if(index == 4) { // medaillon
 			outlines[0].SetActive(false);
 			outlines[1].SetActive(false);
 			outlines[2].SetActive(false);
