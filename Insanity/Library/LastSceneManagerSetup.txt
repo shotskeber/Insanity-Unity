@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Phase Preparation/Phase_preparation.unity
+- path: Assets/New BOSS01/Test03.unity
   isLoaded: 1
   isActive: 1
