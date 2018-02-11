@@ -7,13 +7,14 @@ public class MeuleFoinsInflamable : MonoBehaviour {
     public bool isBurning = false;
     public IA_Boss_01 iaBossScript;
     public int bossDammagesTakken;
-    private ParticleSystem fireParticles;
+    public GameObject fireFx;
+    //private ParticleSystem fireParticles;
 
 
     // Use this for initialization
     void Start () {
-        fireParticles = this.gameObject.GetComponent<ParticleSystem>();
-        fireParticles.enableEmission = false;
+        //fireParticles = this.gameObject.GetComponent<ParticleSystem>();
+        //fireParticles.enableEmission = false;
     }
 
     // Update is called once per frame
@@ -25,21 +26,25 @@ public class MeuleFoinsInflamable : MonoBehaviour {
     {
         if (isBurning)
         {
+            
             if (other.CompareTag("Boss") && iaBossScript.isStuned)
             {
                 iaBossScript.GetComponent<IA_Boss_01>().bossHealthPoints = bossDammagesTakken;
                 Debug.Log("BOSS TAKE DAMAGE");
-                fireParticles.enableEmission = false;
+                //fireParticles.enableEmission = false;
+                //fireFx.SetActive(false);
             }
         }
     }
 
     public IEnumerator BurningMeule()
     {
-        fireParticles.enableEmission = true;
+        //fireParticles.enableEmission = true;
+        fireFx.SetActive(true);
         isBurning = true;
         yield return new WaitForSeconds(10f);
-        fireParticles.enableEmission = false;
+        //fireParticles.enableEmission = false;
+        fireFx.SetActive(false);
         isBurning = false;
         yield return null;
     }

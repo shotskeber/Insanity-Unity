@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 02a158954aebb1242a97297e6e7fe96c
+timeCreated: 1518122170
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet_ankou_hidle_0
+    21300002: spritesheet_ankou_hidle_1
+    21300004: spritesheet_ankou_hidle_5
+    21300006: spritesheet_ankou_hidle_6
+    21300008: spritesheet_ankou_hidle_7
+    21300010: spritesheet_ankou_hidle_8
+    21300012: spritesheet_ankou_hidle_12
+    21300014: spritesheet_ankou_hidle_13
+    21300016: spritesheet_ankou_hidle_14
+    21300018: spritesheet_ankou_hidle_15
+    21300020: spritesheet_ankou_hidle_18
+    21300022: spritesheet_ankou_hidle_19
+    21300024: spritesheet_ankou_hidle_21
+    21300026: spritesheet_ankou_hidle_23
+    21300028: spritesheet_ankou_hidle_24
+    21300030: spritesheet_ankou_hidle_25
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_0
+      rect:
+        serializedVersion: 2
+        x: 61.99733
+        y: 2984.7974
+        width: 948.324
+        height: 260.41797
+      alignment: 9
+      pivot: {x: 0.5005748, y: 0.20644209}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_1
+      rect:
+        serializedVersion: 2
+        x: 1100.4152
+        y: 2429.2627
+        width: 565.3954
+        height: 764.9817
+      alignment: 9
+      pivot: {x: 0.6567659, y: 0.0779973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_5
+      rect:
+        serializedVersion: 2
+        x: 1757.3237
+        y: 2452.9905
+        width: 319.78198
+        height: 694.2451
+      alignment: 9
+      pivot: {x: 0.7943732, y: 0.87728107}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_6
+      rect:
+        serializedVersion: 2
+        x: 2401.7932
+        y: 2491.2695
+        width: 364.17847
+        height: 678.13403
+      alignment: 9
+      pivot: {x: 0.094533324, y: 0.9559928}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_7
+      rect:
+        serializedVersion: 2
+        x: 2975.1785
+        y: 717.4342
+        width: 863.7351
+        height: 2451.454
+      alignment: 9
+      pivot: {x: 0.85383165, y: 0.383003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_8
+      rect:
+        serializedVersion: 2
+        x: 372.99512
+        y: 2471.3284
+        width: 311.83783
+        height: 482.59814
+      alignment: 9
+      pivot: {x: 0.50541395, y: 0.12033659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_12
+      rect:
+        serializedVersion: 2
+        x: 192.38106
+        y: 1669.6393
+        width: 668.56824
+        height: 767.39417
+      alignment: 9
+      pivot: {x: 0.5332456, y: 0.97573084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_13
+      rect:
+        serializedVersion: 2
+        x: 1085.3174
+        y: 1952.5541
+        width: 341.42236
+        height: 439.21252
+      alignment: 9
+      pivot: {x: 0.8557405, y: 0.51363707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_14
+      rect:
+        serializedVersion: 2
+        x: 1492.6436
+        y: 1994.6631
+        width: 302.3734
+        height: 371.43774
+      alignment: 9
+      pivot: {x: 0.11970321, y: 0.49516863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_15
+      rect:
+        serializedVersion: 2
+        x: 1980.0316
+        y: 1765.0098
+        width: 550.18884
+        height: 672.176
+      alignment: 9
+      pivot: {x: 0.52979076, y: 0.85343844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_18
+      rect:
+        serializedVersion: 2
+        x: 38.956264
+        y: 27.862598
+        width: 1265.1774
+        height: 1240.8562
+      alignment: 9
+      pivot: {x: 0.4991741, y: 0.4997657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_19
+      rect:
+        serializedVersion: 2
+        x: 1725.4503
+        y: 785.4454
+        width: 391.14758
+        height: 594.97455
+      alignment: 9
+      pivot: {x: 0.51016504, y: 0.49927282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_21
+      rect:
+        serializedVersion: 2
+        x: 2369.945
+        y: 727.3685
+        width: 451.39868
+        height: 648.2023
+      alignment: 9
+      pivot: {x: 0.23037499, y: 0.7574756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_23
+      rect:
+        serializedVersion: 2
+        x: 1654.4763
+        y: 179.32625
+        width: 183.03748
+        height: 364.653
+      alignment: 9
+      pivot: {x: 0.45441076, y: 0.93381566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_24
+      rect:
+        serializedVersion: 2
+        x: 1986.9742
+        y: 270.95023
+        width: 103.67322
+        height: 183.7699
+      alignment: 9
+      pivot: {x: 0.50182563, y: 0.48729292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_ankou_hidle_25
+      rect:
+        serializedVersion: 2
+        x: 2443.4973
+        y: 271.215
+        width: 414.34326
+        height: 215.42947
+      alignment: 9
+      pivot: {x: 0.500799, y: 0.4980051}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 99491653289820
+  assetBundleName: 
+  assetBundleVariant: 

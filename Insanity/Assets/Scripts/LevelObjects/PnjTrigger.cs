@@ -31,16 +31,19 @@ public class PnjTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.gameObject.GetComponent<SpriteRenderer>().sortingLayerName == "Player")
+        if (selfCollider)
         {
-            selfCollider.enabled = true;
+            if (player.gameObject.GetComponent<SpriteRenderer>().sortingLayerName == "Player")
+            {
+                selfCollider.enabled = true;
+            }
+            else
+            {
+                selfCollider.enabled = false;
+                // Physics2D.IgnoreCollision(player, selfCollider, false);
+            }
         }
-        else
-        {
-            selfCollider.enabled = false;
-           // Physics2D.IgnoreCollision(player, selfCollider, false);
-        }
-        }
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {

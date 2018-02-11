@@ -20,31 +20,33 @@ public class PNJ : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player");
-
-		minX = transform.GetComponent<Collider2D> ().bounds.min.x;
-		maxX = transform.GetComponent<Collider2D> ().bounds.max.x;
-		minY = transform.GetComponent<Collider2D> ().bounds.min.y;
-		maxY = transform.GetComponent<Collider2D> ().bounds.max.y;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (_canInteract) {
-			if (Input.GetKeyDown (KeyCode.F)) {
+			if (Input.GetKeyDown (KeyCode.E)) {
 				Fungus.Flowchart.BroadcastFungusMessage (DialogueToSay);
 			}
 		}
 
 
-		if (player.transform.position.x >= minX && player.transform.position.x <= maxX) {
-			if (player.transform.position.y >= minY && player.transform.position.y <= maxY) {
-				_canInteract = true;
-			}else{
-				_canInteract = false;
-			}
-		} else {
-			_canInteract = false;
-		}
 
 	}
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            _canInteract = true;
+        }
+
+    }
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.CompareTag("Player"))
+        {
+            _canInteract = false;
+        }
+    }
 }

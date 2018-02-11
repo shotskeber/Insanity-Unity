@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cbeba6822788dc4ba77353b89eb796a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phase01_RightBlocker: {fileID: 0}
-  phase02_RightBlocker: {fileID: 0}
+  phase1_Content: {fileID: 0}
+  phase2_Content: {fileID: 0}
+  phase3_Content: {fileID: 0}
   iaBoss01_script: {fileID: 0}
