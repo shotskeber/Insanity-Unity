@@ -40,7 +40,7 @@ Insanity/.vs/Insanity/v15/Server/sqlite3/storage.ide-shm
 [Tt]emp/
 [Oo]bj/
 [Bb]uild
-/[Ll]ibrary/
+[Ll]ibrary/
 sysinfo.txt
 *.stackdump
 
@@ -65,3 +65,16 @@ sysinfo.txt
 .DS_Store*
 ._*
 .Spotlight-V100
+Insanity/Library/assetDatabase3
+*.meta
+Insanity/Library/
+Insanity\Library\
+Insanity/Library/shadercompiler-UnityShaderCompiler.exe0.log
+Insanity/Library/CurrentLayout.dwlt
+Insanity/Library/shadercompiler-UnityShaderCompiler.exe0.log
+Insanity/Library/CurrentLayout.dwlt
+Insanity/Library/expandedItems
+Insanity/Library/SpriteAtlasDatabase.asset
+Insanity/Library/CurrentLayout.dwlt
+Insanity/Library/shadercompiler-UnityShaderCompiler.exe0.log
+Insanity/Library/CurrentLayout.dwlt
