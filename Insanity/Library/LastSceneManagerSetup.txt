@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Auberge.unity
-=======
-- path: Assets/Animations/maincharacter_hiddle.unity
->>>>>>> 68bb6e5c957dfbf7ca31072cae3f30bb8ee497ab
   isLoaded: 1
   isActive: 1
