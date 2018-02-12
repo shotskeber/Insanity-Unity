@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Rue artisanal.unity
-=======
-- path: Assets/Scenes/Grande place.unity
->>>>>>> d8d9ac0fceb3544975677bb0e2a90c971d28a2e8
+- path: Assets/Scenes/Auberge.unity
   isLoaded: 1
   isActive: 1
