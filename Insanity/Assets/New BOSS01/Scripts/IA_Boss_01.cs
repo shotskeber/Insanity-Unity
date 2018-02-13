@@ -626,7 +626,8 @@ public class IA_Boss_01 : MonoBehaviour {
     IEnumerator Phase_1_EndingCinematic()
     {
         //fade & boss is invincible 
-        transitionScreenFading._fade = true;
+        player.GetComponent<SpriteRenderer>().sortingLayerName = "Player";
+		transitionScreenFading._fade = true;
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
         bossCol.enabled = false;
@@ -663,6 +664,7 @@ public class IA_Boss_01 : MonoBehaviour {
     IEnumerator Phase_2_EndingCinematic()
     { 
         //fade & boss is invincible 
+		player.GetComponent<SpriteRenderer>().sortingLayerName = "Player";
         transitionScreenFading._fade = true;
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
