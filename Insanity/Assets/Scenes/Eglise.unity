@@ -387,12 +387,6 @@ Prefab:
     - {fileID: 114010440968720582, guid: cb14590eb77d7994c8d52a06f1f0ef2a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: cb14590eb77d7994c8d52a06f1f0ef2a, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &2569227 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114746812929859102, guid: cb14590eb77d7994c8d52a06f1f0ef2a,
-    type: 2}
-  m_PrefabInternal: {fileID: 2569226}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!114 &2569228 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114567447232093840, guid: cb14590eb77d7994c8d52a06f1f0ef2a,
@@ -551,7 +545,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 102830864}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -930,7 +924,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 761897028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -1591,6 +1585,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 787967408}
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+--- !u!114 &787967411 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114023575399973716, guid: 8f6ebcd89062ebd49b07812ba5e0032d,
+    type: 2}
+  m_PrefabInternal: {fileID: 787967408}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!114 &787967412 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114793660809501386, guid: 8f6ebcd89062ebd49b07812ba5e0032d,
@@ -2544,7 +2544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2569227}
+  selectedFlowchart: {fileID: 787967411}
 --- !u!4 &2024381322
 Transform:
   m_ObjectHideFlags: 1
@@ -2785,22 +2785,22 @@ Prefab:
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -80
+      value: -78.23137
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 320
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 224408089597353870, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -1067.52
+      value: -920
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 285.9
+      value: 520.75
       objectReference: {fileID: 0}
     - target: {fileID: 1526688757937338, guid: a3afddacf4d95204089546c14649efe3, type: 2}
       propertyPath: m_IsActive

@@ -16,9 +16,9 @@ public class PlayerWoodPlank : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.E)) {
+		/*if(Input.GetKeyDown(KeyCode.E)) {
 			StartCoroutine(WoodHit());
-		}
+		}*/
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
@@ -33,7 +33,14 @@ public class PlayerWoodPlank : MonoBehaviour {
 	woodPlankCollider.enabled = true;
 	yield return new WaitForSeconds(0.1f);
 	woodPlankCollider.enabled = false;
-
+		while (woodHit.isPlaying) {
+			yield return null;
+		}
+		gameObject.SetActive (false);
 	yield return null;
+	}
+
+	public void hit(){
+		StartCoroutine(WoodHit());
 	}
 }

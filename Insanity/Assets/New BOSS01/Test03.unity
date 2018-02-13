@@ -15906,6 +15906,16 @@ Prefab:
       propertyPath: phase3_Content
       value: 
       objectReference: {fileID: 1699511898}
+    - target: {fileID: 114357999290917886, guid: d66b6b1935bbf084a8cd86a49849dfd0,
+        type: 2}
+      propertyPath: torch
+      value: 
+      objectReference: {fileID: 1498435498}
+    - target: {fileID: 114357999290917886, guid: d66b6b1935bbf084a8cd86a49849dfd0,
+        type: 2}
+      propertyPath: woodplank
+      value: 
+      objectReference: {fileID: 998527443}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d66b6b1935bbf084a8cd86a49849dfd0, type: 2}
   m_IsPrefabParent: 0
