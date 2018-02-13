@@ -4,4 +4,34 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Tutoriel.unity
+    guid: 4c13e11bd0344a0499d1d2a1a17ccd64
+  - enabled: 1
+    path: Assets/Scenes/Auberge.unity
+    guid: 9510d71e8fff59747a7352e7ed95ecc1
+  - enabled: 1
+    path: Assets/Scenes/Rue artisanal.unity
+    guid: a3f0234a1af697a43932998d559e57e0
+  - enabled: 1
+    path: Assets/Scenes/Lavoire.unity
+    guid: 253c8b0eefc3c314897bc611753eedfe
+  - enabled: 1
+    path: Assets/Scenes/Maison Bourgeoise.unity
+    guid: 3d000eb83c4029a4e89f30443cb7aed0
+  - enabled: 1
+    path: Assets/Scenes/Eglise.unity
+    guid: decdadd39fac126478b407a06739ffc9
+  - enabled: 1
+    path: Assets/Scenes/Grande place.unity
+    guid: 9631ab2b47d5bfa4fa5dca698fb586bd
+  - enabled: 1
+    path: Assets/Scenes/Champs.unity
+    guid: 4fc626a522283e449ae3f3292e2c6545
+  - enabled: 1
+    path: Assets/Scenes/Manoir.unity
+    guid: a491179b3bde33243ae057e0df082e51
+  - enabled: 1
+    path: Assets/Scenes/Porte de la ville.unity
+    guid: 3df3d7e437f86db48908dc7960cc756e

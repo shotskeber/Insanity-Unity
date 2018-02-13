@@ -6,6 +6,7 @@ public class SceneChanger : MonoBehaviour {
 
 	bool _canInteract = false;
     public int scenenumber = 0;
+	public bool isTrigger;
 
 
 
@@ -18,8 +19,9 @@ public class SceneChanger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 		if (_canInteract) {
-			if (Input.GetKeyDown (KeyCode.UpArrow)) {
+			if (Input.GetKeyDown (KeyCode.UpArrow) || isTrigger) {
 				AutoFade.LoadLevel (scenenumber, 0.5f, 0.5f, Color.black);
 			}
 		}

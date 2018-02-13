@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/New BOSS01/Test03.unity
+- path: Assets/Scenes/Auberge.unity
   isLoaded: 1
   isActive: 1
