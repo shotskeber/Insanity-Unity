@@ -49,15 +49,5 @@ public class HandHeldItem : MonoBehaviour {
             itemInHand = 5;
         }
 
-
-		if (Input.GetKeyDown (KeyCode.E)) {
-			//useitem
-			if (((itemInHand - 1) < Inventory.instance.items.Count) && itemInHand!=0) {
-				if (Inventory.instance.items [itemInHand - 1].name == "Wood Plank") {
-					GameObject.FindObjectOfType<PlayerWoodPlank> ().SendMessage ("hit");
-					Inventory.instance.RemoveAt (itemInHand - 1);
-				}
-			}
-		}
     }
 }

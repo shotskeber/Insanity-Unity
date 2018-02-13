@@ -43,12 +43,4 @@ public class GameManager : MonoBehaviour {
 	{
 
 	}
-
-	void OnApplicationQuit()
-	{
-		if (GameManager.instance != null)
-			Destroy (GameManager.instance);
-		PlayerPrefs.DeleteAll();
-		//delete prefs
-	}
 }
