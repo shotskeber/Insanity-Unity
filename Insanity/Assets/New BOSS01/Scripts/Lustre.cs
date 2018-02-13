@@ -14,6 +14,8 @@ public class Lustre : MonoBehaviour {
 	public ParticleSystem fireParticles;
     //public Animator lustreAnimator;
 	private Animation lustreFall;
+	private bool _canInteract = false;
+
 	// Use this for initialization
 	void Start () {
 		fireParticles.enableEmission = false;
@@ -24,7 +26,17 @@ public class Lustre : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (fireActive)
+        if (_canInteract && fireActive) {
+				iaBossScript.isStuned = true;
+				iaBossScript.GetComponent<IA_Boss_01>().bossHealthPoints = 0;
+				Debug.Log("Boss 01 DEFEATED");
+		}
+
+		if(_canInteract){
+			iaBossScript.isStuned = true;
+		}
+		//--------------------------------------------------------
+		if (fireActive)
         {
             fireParticles.enableEmission = true;
         }
@@ -50,19 +62,15 @@ public class Lustre : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other){
+		if(other.CompareTag("Boss")){
+				_canInteract = true;
+		}
+	}
 
-        if (fireActive) {
-			if(other.CompareTag("Boss")) {
-				iaBossScript.isStuned = true;
-				iaBossScript.GetComponent<IA_Boss_01>().bossHealthPoints = 0;
-				Debug.Log("Boss 01 DEFEATED");
-			}
-		} else {
-            if (other.CompareTag("Boss"))
-            {
-                iaBossScript.isStuned = true;
-            }
-        }
+	void OnTriggerExit2D(Collider2D other){
+		if(other.CompareTag("Boss")){
+				_canInteract = false;
+		}
 	}
 
     public IEnumerator GoDown()
