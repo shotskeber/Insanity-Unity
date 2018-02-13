@@ -1,10 +1,17 @@
 fileFormatVersion: 2
 guid: b11a774346f89422f94b677e29633e4a
+<<<<<<< HEAD
 timeCreated: 1518459478
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
+=======
+timeCreated: 1506533989
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName: {}
+>>>>>>> 36f7f087804ba1fd29499a9228c3907c379dde57
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -13,8 +20,11 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+<<<<<<< HEAD
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
+=======
+>>>>>>> 36f7f087804ba1fd29499a9228c3907c379dde57
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -30,6 +40,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+<<<<<<< HEAD
     serializedVersion: 2
     filterMode: 0
     aniso: -1
@@ -37,6 +48,12 @@ TextureImporter:
     wrapU: 1
     wrapV: 1
     wrapW: 1
+=======
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+>>>>>>> 36f7f087804ba1fd29499a9228c3907c379dde57
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -58,7 +75,10 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 128
+<<<<<<< HEAD
     resizeAlgorithm: 0
+=======
+>>>>>>> 36f7f087804ba1fd29499a9228c3907c379dde57
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -67,7 +87,10 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 128
+<<<<<<< HEAD
     resizeAlgorithm: 0
+=======
+>>>>>>> 36f7f087804ba1fd29499a9228c3907c379dde57
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -76,7 +99,10 @@ TextureImporter:
     overridden: 0
   - buildTarget: WebGL
     maxTextureSize: 128
+<<<<<<< HEAD
     resizeAlgorithm: 0
+=======
+>>>>>>> 36f7f087804ba1fd29499a9228c3907c379dde57
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -87,7 +113,10 @@ TextureImporter:
     serializedVersion: 2
     sprites: []
     outline: []
+<<<<<<< HEAD
     physicsShape: []
+=======
+>>>>>>> 36f7f087804ba1fd29499a9228c3907c379dde57
   spritePackingTag: 
   userData: 
   assetBundleName: 

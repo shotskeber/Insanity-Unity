@@ -1,9 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 05ca7c5313dc50e479546ca31ed26cf9
 timeCreated: 1518383427
 licenseType: Pro
 MonoImporter:
   externalObjects: {}
+=======
+guid: 516e5ba8bde80bc488bd8ac90055bc31
+timeCreated: 1518388244
+licenseType: Pro
+MonoImporter:
+>>>>>>> 36f7f087804ba1fd29499a9228c3907c379dde57
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
