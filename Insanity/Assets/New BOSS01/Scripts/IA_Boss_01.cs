@@ -584,6 +584,7 @@ public class IA_Boss_01 : MonoBehaviour {
     //  phase3
     IEnumerator Phase_3_EndingCinematic()
     {
+		player.GetComponent<SpriteRenderer>().sortingLayerName = "Player";
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
         gameObject.SetActive(false);
