@@ -11,6 +11,9 @@ public class Boss01LevelManager : MonoBehaviour {
 
     public IA_Boss_01 iaBoss01_script;
 
+	public GameObject woodplank;
+	public GameObject torch;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -26,5 +29,22 @@ public class Boss01LevelManager : MonoBehaviour {
             phase2_Content.SetActive(false);
             phase3_Content.SetActive(true);
         }
+		if (((GameManager.instance.heldItem - 1) < Inventory.instance.items.Count) && GameManager.instance.heldItem != 0) {
+			
+			if (Inventory.instance.items [GameManager.instance.heldItem - 1].name == "Wood Plank") {
+				woodplank.SetActive (true);
+			} else {
+				woodplank.SetActive (false);
+			}
+			if (Inventory.instance.items [GameManager.instance.heldItem - 1].name == "Torche") {
+				torch.SetActive (true);
+			} else {
+				torch.SetActive (false);
+			}
+		} else {
+			//torch.SetActive (false);
+			//woodplank.SetActive (false);
+		}
+
 	}
 }

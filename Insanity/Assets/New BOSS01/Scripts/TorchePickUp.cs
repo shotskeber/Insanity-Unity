@@ -32,7 +32,7 @@ public class TorchePickUp : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E) && _canInteract)
         {
             PickUp();
-            playerTorche.SetActive(true);
+            //playerTorche.SetActive(true);
         }
     }
     // Pick up the item
