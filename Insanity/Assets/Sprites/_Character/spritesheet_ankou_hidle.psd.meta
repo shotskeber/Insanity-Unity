@@ -1,7 +1,12 @@
 fileFormatVersion: 2
 guid: 02a158954aebb1242a97297e6e7fe96c
+<<<<<<< HEAD
+timeCreated: 1518484164
+licenseType: Free
+=======
 timeCreated: 1518459444
 licenseType: Pro
+>>>>>>> 7db7f7b73a34d82213c793911ec7d7f9ae5dbc0e
 TextureImporter:
   fileIDToRecycleName:
     21300000: spritesheet_ankou_hidle_0
@@ -320,6 +325,6 @@ TextureImporter:
     outline: []
     physicsShape: []
   spritePackingTag: 
-  userData: 99495159857146
+  userData: 99495190372826
   assetBundleName: 
   assetBundleVariant: 
