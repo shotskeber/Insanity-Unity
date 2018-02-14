@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Prime31;
+using Anima2D;
 
 public class objectHide : MonoBehaviour {
 
@@ -75,11 +76,19 @@ public class objectHide : MonoBehaviour {
 
 	IEnumerator takeCover(){
 		player.GetComponent<Renderer> ().sortingLayerName = "Platforms";
+		var temp = player.GetComponentsInChildren<SpriteMeshInstance> ();
+		foreach (SpriteMeshInstance sm in temp) {
+			sm.sortingLayerName ="Platforms";
+		}
 		yield return null;
 	}
 
 	IEnumerator exitCover(){
 		player.GetComponent<Renderer> ().sortingLayerName = "Player";
+		var temp = player.GetComponentsInChildren<SpriteMeshInstance> ();
+		foreach (SpriteMeshInstance sm in temp) {
+			sm.sortingLayerName ="Player";
+		}
 		yield return null;
 	}
 }

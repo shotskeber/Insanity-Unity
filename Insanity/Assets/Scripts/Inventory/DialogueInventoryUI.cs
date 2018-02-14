@@ -17,12 +17,14 @@ public class DialogueInventoryUI : MonoBehaviour
     {
         inventory = DialogueInventory.instance;
         inventory.onItemChangedCallback += UpdateUI;
+		inventoryUI.SetActive(!inventoryUI.activeSelf);
+		UpdateUI();
     }
 
     // Check to see if we should open/close the inventory
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N))
+		if (Input.GetKeyDown(KeyCode.B))
         {
             firstSelection.Select();
             inventoryUI.SetActive(!inventoryUI.activeSelf);

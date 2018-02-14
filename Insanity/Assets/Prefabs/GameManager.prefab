@@ -56,3 +56,5 @@ MonoBehaviour:
   heldItem: 0
   lightGeneralInt: 1
   lightNightInt: 0
+  isDayGM: 1
+  spawnSide: 0

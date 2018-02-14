@@ -13,19 +13,20 @@ public class DayCycle : MonoBehaviour {
 	public Light sun;
 	public GameObject earth;
 	public Light nightLight;
-	public Light playerTorch;
+	private GameObject playerTorch;
 
 
 	void Start() {
 		dayLength = 1440;
-		dayStart = 300;
-		nightStart = 980;
+		dayStart = 400;
+		nightStart = 1150;
 		currentTime = 700;
 		StartCoroutine( TimeOfDay ());
 		earth = gameObject;
 		sun.intensity = 1f;
 		nightLight.intensity = 0f;
 		isDay = true;
+		playerTorch = GameObject.Find ("Spotlight");
 
         if (GameManager.instance.currentTime != currentTime)
         {
@@ -33,6 +34,14 @@ public class DayCycle : MonoBehaviour {
             sun.intensity = GameManager.instance.lightGeneralInt;
             nightLight.intensity = GameManager.instance.lightNightInt;
 			isDay = GameManager.instance.isDayGM;
+
+			if (isDay) {
+				sun.intensity = 1f;
+				nightLight.intensity = 0f;
+			} else {
+				sun.intensity = 0f;
+				nightLight.intensity = 0.18f;
+			}
         }
     }
 
@@ -43,9 +52,9 @@ public class DayCycle : MonoBehaviour {
 		GameManager.instance.isDayGM = isDay;
         if (playerTorch) {
 			if (isDay) {
-				playerTorch.intensity = 0f;
+				playerTorch.SetActive (false);
 			} else {
-				playerTorch.intensity = 1f;
+				playerTorch.SetActive (true);
 			}
 		}
 		if (currentTime > 0 && currentTime < dayStart) {
@@ -53,14 +62,14 @@ public class DayCycle : MonoBehaviour {
 		} else if (currentTime >= dayStart && currentTime < nightStart) {
 			if (!isDay) {
 				isDay = true;
-				StartCoroutine (ScaleX1(0f, 1f, 20f, sun));
-				StartCoroutine (ScaleX1(0.18f, 0f, 10f, nightLight));
+				StartCoroutine (ScaleX1(sun.intensity, 1f, 10f, sun));
+				StartCoroutine (ScaleX1(nightLight.intensity, 0f, 7f, nightLight));
 			}
 		} else if (currentTime >= nightStart && currentTime < dayLength) {
 			if (isDay) {
 				isDay = false;
-				StartCoroutine (ScaleX1(1f, 0f, 20f, sun));
-				StartCoroutine (ScaleX1(0f, 0.18f, 10f, nightLight));
+				StartCoroutine (ScaleX1(sun.intensity, 0f, 10f, sun));
+				StartCoroutine (ScaleX1(nightLight.intensity, 0.18f, 7f, nightLight));
 			}
 		} else if (currentTime >= dayLength) {
 			currentTime = 0;

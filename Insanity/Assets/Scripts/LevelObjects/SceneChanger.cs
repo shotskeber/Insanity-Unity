@@ -7,8 +7,13 @@ public class SceneChanger : MonoBehaviour {
 	bool _canInteract = false;
     public int scenenumber = 0;
 	public bool isTrigger;
-
-
+	public enum levelSide{
+		Right,
+		Middle,
+		Left,
+		}
+	public levelSide positionInLevel;
+	public bool isBossEntry = false;
 
 	// Use this for initialization
 	void Start () {
@@ -19,9 +24,16 @@ public class SceneChanger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 		if (_canInteract) {
 			if (Input.GetKeyDown (KeyCode.UpArrow) || isTrigger) {
+				if (positionInLevel == levelSide.Right) {
+					GameManager.instance.spawnSide = 1;
+				}else if (positionInLevel == levelSide.Left) {
+					GameManager.instance.spawnSide = 3;
+				}else if (positionInLevel == levelSide.Middle) {
+					GameManager.instance.spawnSide = 2;
+				}
 				AutoFade.LoadLevel (scenenumber, 0.5f, 0.5f, Color.black);
 			}
 		}
@@ -30,10 +42,14 @@ public class SceneChanger : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collision)
 	{
-		
-		if (collision.CompareTag("Player"))
-		{
-			_canInteract = true;
+		if (!isBossEntry) {
+			if (collision.CompareTag ("Player")) {
+				_canInteract = true;
+			}
+		} else if (!GameManager.instance.isDayGM) {
+			if (collision.CompareTag ("Player")) {
+				_canInteract = true;
+			}
 		}
 
 	}

@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 	private float normalizedHorizontalSpeed = 0;
 
 	private CharController2D _controller;
-	private Animator _animator;
+	public Animator _animator;
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
 
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Awake()
 	{
-		_animator = GetComponent<Animator>();
+		//_animator = GetComponent<Animator>();
 		_controller = GetComponent<CharController2D>();
 
 		// listen to some events for illustration purposes
@@ -64,9 +64,9 @@ public class PlayerMovement : MonoBehaviour {
 		}
 
 		if (directionP == 1) {
-			ProCamera2D.Instance.OverallOffset = new Vector2 (10f, 2f);
+			ProCamera2D.Instance.OverallOffset = new Vector2 (3f, 2f);
 		} else {
-			ProCamera2D.Instance.OverallOffset = new Vector2 (-10f, 2f);
+			ProCamera2D.Instance.OverallOffset = new Vector2 (-3f, 2f);
 		}
 
 		if (Input.GetKeyDown (KeyCode.H)) {
@@ -123,12 +123,11 @@ public class PlayerMovement : MonoBehaviour {
 
 			//if( _controller.isGrounded ){}
 			//_animator.Play( Animator.StringToHash( "Idle" ) );
-			_animator.SetBool ("IsWalking", false);
+			_animator.SetBool ("IsRunning", false);
 			_animator.SetBool ("IsWalking", false);
 			_animator.SetBool("IsStatic", true);
 		}
 		// we can only jump whilst grounded
-
 
 
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour {
     public float lightGeneralInt = 1f;
     public float lightNightInt = 0f;
 	public bool isDayGM = true;
+	public int spawnSide = 0;
 
     //Awake is always called before any Start functions
     void Awake()
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour {
     {
        /* Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;*/
+		//SceneManager.activeSceneChanged += SceneChanged;
     }
 
 	//Update is called every frame.
