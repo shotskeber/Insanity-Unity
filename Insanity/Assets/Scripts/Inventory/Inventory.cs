@@ -51,4 +51,12 @@ public class Inventory : MonoBehaviour
             onItemChangedCallback.Invoke();
     }
 
+	public void RemoveAt(int pos)
+	{
+		items.RemoveAt(pos);
+
+		if (onItemChangedCallback != null)
+			onItemChangedCallback.Invoke();
+	}
+
 }

@@ -1,35 +1,15 @@
 fileFormatVersion: 2
 guid: d3bbfa5f7e46e46469b0dff34fd635fc
+<<<<<<< HEAD
 timeCreated: 1518622149
 licenseType: Free
+=======
+timeCreated: 1518435279
+licenseType: Pro
+>>>>>>> 7db7f7b73a34d82213c793911ec7d7f9ae5dbc0e
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: spritesheet_ankou_marche_0
-    21300002: spritesheet_ankou_marche_1
-    21300004: spritesheet_ankou_marche_2
-    21300006: spritesheet_ankou_marche_3
-    21300008: spritesheet_ankou_marche_4
-    21300010: spritesheet_ankou_marche_5
-    21300012: spritesheet_ankou_marche_7
-    21300014: spritesheet_ankou_marche_8
-    21300016: spritesheet_ankou_marche_9
-    21300018: spritesheet_ankou_marche_10
-    21300020: spritesheet_ankou_marche_11
-    21300022: spritesheet_ankou_marche_12
-    21300024: spritesheet_ankou_marche_13
-    21300026: spritesheet_ankou_marche_14
-    21300028: spritesheet_ankou_marche_15
-    21300030: spritesheet_ankou_marche_16
-    21300032: spritesheet_ankou_marche_17
-    21300034: spritesheet_ankou_marche_18
-    21300036: spritesheet_ankou_marche_19
-    21300038: spritesheet_ankou_marche_20
-    21300040: spritesheet_ankou_marche_21
-    21300042: spritesheet_ankou_marche_22
-    21300044: spritesheet_ankou_marche_23
-    21300046: spritesheet_ankou_marche_24
-    21300048: spritesheet_ankou_marche_25
-    21300050: spritesheet_ankou_marche_26
+  fileIDToRecycleName: {}
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -65,11 +45,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.111692235, y: 0.90725017}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
@@ -83,14 +63,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -99,262 +72,14 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_0
-      rect:
-        serializedVersion: 2
-        x: 28.965431
-        y: 2655.6702
-        width: 912.7251
-        height: 302.50098
-      alignment: 9
-      pivot: {x: 0.4790467, y: 0.1374697}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_1
-      rect:
-        serializedVersion: 2
-        x: 1154.4146
-        y: 2478.988
-        width: 385.06836
-        height: 470.98047
-      alignment: 9
-      pivot: {x: 0.9498032, y: 0.3641615}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_2
-      rect:
-        serializedVersion: 2
-        x: 1634.2933
-        y: 2528.055
-        width: 306.15295
-        height: 364.0642
-      alignment: 9
-      pivot: {x: 0.13768633, y: 0.43169057}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_3
-      rect:
-        serializedVersion: 2
-        x: 1931.9999
-        y: 1691.6761
-        width: 1259.3468
-        height: 1212.2413
-      alignment: 9
-      pivot: {x: 0.5652473, y: 0.8958908}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_4
-      rect:
-        serializedVersion: 2
-        x: 3310
-        y: 515.90063
-        width: 845.61523
-        height: 2434.8596
-      alignment: 9
-      pivot: {x: 0.87860775, y: 0.50149435}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_5
-      rect:
-        serializedVersion: 2
-        x: 65.3195
-        y: 2157.6843
-        width: 377.0174
-        height: 460.2517
-      alignment: 9
-      pivot: {x: 0.5288303, y: 0.103825025}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_7
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 2129.5928
-        width: 375.7838
-        height: 461.11865
-      alignment: 9
-      pivot: {x: 0.57079184, y: 0.1248593}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_9
-      rect:
-        serializedVersion: 2
-        x: 1122
-        y: 1564.7004
-        width: 574.5498
-        height: 839.3425
-      alignment: 9
-      pivot: {x: 0.49865127, y: 0.5025358}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_10
-      rect:
-        serializedVersion: 2
-        x: 184
-        y: 1472.7179
-        width: 307.56055
-        height: 621.3092
-      alignment: 9
-      pivot: {x: 0.15602759, y: 0.93194735}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_11
-      rect:
-        serializedVersion: 2
-        x: 487
-        y: 1737.6674
-        width: 287.17963
-        height: 268.7876
-      alignment: 9
-      pivot: {x: 0.2102636, y: 0.85896593}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_13
-      rect:
-        serializedVersion: 2
-        x: 739.99994
-        y: 1346.7421
-        width: 415.57916
-        height: 195.4303
-      alignment: 9
-      pivot: {x: 0.49689707, y: 0.49510202}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_14
-      rect:
-        serializedVersion: 2
-        x: 2142
-        y: 852.83624
-        width: 287.1797
-        height: 615.196
-      alignment: 9
-      pivot: {x: 0.41328824, y: 0.9049012}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_18
-      rect:
-        serializedVersion: 2
-        x: 2657
-        y: 853.83606
-        width: 376.85547
-        height: 596.8567
-      alignment: 9
-      pivot: {x: 0.22373024, y: 0.89186716}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_21
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 853.83606
-        width: 272.9131
-        height: 372.71008
-      alignment: 9
-      pivot: {x: 0.7291665, y: 0.8801401}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_22
-      rect:
-        serializedVersion: 2
-        x: 547
-        y: 766.85266
-        width: 446.1504
-        height: 403.2755
-      alignment: 9
-      pivot: {x: 0.07950569, y: 0.9489968}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_23
-      rect:
-        serializedVersion: 2
-        x: 1221
-        y: 386.92526
-        width: 664.2256
-        height: 763.9479
-      alignment: 9
-      pivot: {x: 0.540149, y: 0.94039625}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_24
-      rect:
-        serializedVersion: 2
-        x: 2080
-        y: 156.96906
-        width: 317.75098
-        height: 653.91223
-      alignment: 9
-      pivot: {x: 0.48632815, y: 0.8877758}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: spritesheet_ankou_marche_25
-      rect:
-        serializedVersion: 2
-        x: 2714.9998
-        y: 246.9519
-        width: 301.4463
-        height: 592.7814
-      alignment: 9
-      pivot: {x: 0.41860852, y: 0.95299774}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 
+<<<<<<< HEAD
   userData: 99501973967136
+=======
+  userData: 
+>>>>>>> 7db7f7b73a34d82213c793911ec7d7f9ae5dbc0e
   assetBundleName: 
   assetBundleVariant: 

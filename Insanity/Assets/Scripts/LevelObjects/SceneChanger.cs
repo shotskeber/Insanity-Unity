@@ -5,6 +5,9 @@ using UnityEngine;
 public class SceneChanger : MonoBehaviour {
 
 	bool _canInteract = false;
+    public int scenenumber = 0;
+	public bool isTrigger;
+
 
 
 	// Use this for initialization
@@ -16,9 +19,10 @@ public class SceneChanger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 		if (_canInteract) {
-			if (Input.GetKeyDown (KeyCode.UpArrow)) {
-				AutoFade.LoadLevel ("blabla", 0.5f, 0.5f, Color.black);
+			if (Input.GetKeyDown (KeyCode.UpArrow) || isTrigger) {
+				AutoFade.LoadLevel (scenenumber, 0.5f, 0.5f, Color.black);
 			}
 		}
 

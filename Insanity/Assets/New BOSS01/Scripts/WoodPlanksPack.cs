@@ -36,7 +36,7 @@ public class WoodPlanksPack : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.E) && _canInteract)
 		{
 			PickUp();
-			playerPlank.SetActive(true);
+			//playerPlank.SetActive(true);
 		}
 
 		if (p1)

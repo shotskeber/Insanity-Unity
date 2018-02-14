@@ -8,6 +8,8 @@ public class IA_Boss_01 : MonoBehaviour {
     [HideInInspector]
     public Transform player;
 
+    [Header("Patrol")]
+    [Tooltip("If the sprite face left on the spritesheet, enable this. Otherwise, leave disabled")]
     public Transform playerSpawn;
     public Boss01_TransitionScreenFade transitionScreenFading;
 
@@ -15,7 +17,7 @@ public class IA_Boss_01 : MonoBehaviour {
     private int p3Transitions = 0;
     public Transform detector;
     //public float detectorYtr;
-
+    
     public bool isStuned;
     public GameObject stunParticles;
 
@@ -42,12 +44,13 @@ public class IA_Boss_01 : MonoBehaviour {
 
     public SpriteRenderer boss01_spr;
 
+    [Header("1 FSM, 3 phases")]
     public bool phase_1;
     public bool phase_2;
     public bool phase_3;
 
 
-    public bool FSMenable;
+    public bool FSMEnable;
 
     #endregion
 
@@ -55,7 +58,7 @@ public class IA_Boss_01 : MonoBehaviour {
     // Use this for initialization
     void Start () {
         phase_1 = true;
-        FSMenable = true;
+        FSMEnable = true;
         StartCoroutine("Boss01_FSM");
     }
 
@@ -83,8 +86,7 @@ public class IA_Boss_01 : MonoBehaviour {
             textDebug.text = "ATTACK";
         }
         //DEBUG
-
-
+        
         Transform player = GameObject.FindGameObjectWithTag("Player").transform;
         Collider2D playerCol = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
         if (player.GetComponent<SpriteRenderer>().sortingLayerName == "Platforms")
@@ -253,7 +255,7 @@ public class IA_Boss_01 : MonoBehaviour {
     #region Boss 01 Finite State Machine
     public IEnumerator Boss01_FSM()
     {
-        while (FSMenable) {
+        while (FSMEnable) {
         if (phase_1) {
             switch (phase1_state)
             {
@@ -477,7 +479,7 @@ public class IA_Boss_01 : MonoBehaviour {
             chaseDir = 5f;
         }
 
-        transform.position = Vector3.MoveTowards(transform.position,new Vector3(player.position.x + chaseDir, transform.position.y, transform.position.z), mvtSpeed * 1.25f);
+        transform.position = Vector3.MoveTowards(transform.position,new Vector3(player.position.x + chaseDir, transform.position.y, transform.position.z), mvtSpeed * 2f);
         transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
         if (transform.position == new Vector3(player.position.x + chaseDir, transform.position.y, transform.position.z))
@@ -584,6 +586,10 @@ public class IA_Boss_01 : MonoBehaviour {
     //  phase3
     IEnumerator Phase_3_EndingCinematic()
     {
+        Collider2D playerCol = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
+        Physics2D.IgnoreCollision(playerCol, bossCol, true);
+        Physics2D.IgnoreCollision(playerCol, bossContactCol, true);
+        player.GetComponent<SpriteRenderer>().sortingLayerName = "Player";
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
         gameObject.SetActive(false);
@@ -625,8 +631,12 @@ public class IA_Boss_01 : MonoBehaviour {
     //  Transition 1 Cinematic: fade in, boss goto wp, player tp to wp, phase2 enabled, fade out
     IEnumerator Phase_1_EndingCinematic()
     {
+        Collider2D playerCol = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
+        Physics2D.IgnoreCollision(playerCol, bossCol, true);
+        Physics2D.IgnoreCollision(playerCol, bossContactCol, true);
         //fade & boss is invincible 
-        transitionScreenFading._fade = true;
+        player.GetComponent<SpriteRenderer>().sortingLayerName = "Player";
+		transitionScreenFading._fade = true;
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
         bossCol.enabled = false;
@@ -661,8 +671,12 @@ public class IA_Boss_01 : MonoBehaviour {
 
     //  Transition 2 Cinematic
     IEnumerator Phase_2_EndingCinematic()
-    { 
+    {
+        Collider2D playerCol = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
+        Physics2D.IgnoreCollision(playerCol, bossCol, true);
+        Physics2D.IgnoreCollision(playerCol, bossContactCol, true);
         //fade & boss is invincible 
+        player.GetComponent<SpriteRenderer>().sortingLayerName = "Player";
         transitionScreenFading._fade = true;
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;

@@ -1,0 +1,382 @@
+fileFormatVersion: 2
+guid: 6af59f230f5e5744db2e1b974dc30881
+timeCreated: 1518484048
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: spritesheet_owen_marche_0
+    21300002: spritesheet_owen_marche_1
+    21300004: spritesheet_owen_marche_2
+    21300006: spritesheet_owen_marche_3
+    21300008: spritesheet_owen_marche_4
+    21300010: spritesheet_owen_marche_5
+    21300012: spritesheet_owen_marche_6
+    21300014: spritesheet_owen_marche_7
+    21300016: spritesheet_owen_marche_8
+    21300018: spritesheet_owen_marche_9
+    21300020: spritesheet_owen_marche_10
+    21300022: spritesheet_owen_marche_11
+    21300024: spritesheet_owen_marche_13
+    21300026: spritesheet_owen_marche_14
+    21300028: spritesheet_owen_marche_15
+    21300030: spritesheet_owen_marche_16
+    21300032: spritesheet_owen_marche_17
+    21300034: spritesheet_owen_marche_18
+    21300036: spritesheet_owen_marche_19
+    21300038: spritesheet_owen_marche_20
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_0
+      rect:
+        serializedVersion: 2
+        x: 63.519493
+        y: 1167.5526
+        width: 264.52066
+        height: 461.1787
+      alignment: 9
+      pivot: {x: 0.50272256, y: 0.50077635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_1
+      rect:
+        serializedVersion: 2
+        x: 376.74213
+        y: 1396.0028
+        width: 90.39609
+        height: 99.1709
+      alignment: 9
+      pivot: {x: 0.49513066, y: 0.43356666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_2
+      rect:
+        serializedVersion: 2
+        x: 529.16583
+        y: 1384.9336
+        width: 209.47699
+        height: 256.60876
+      alignment: 9
+      pivot: {x: 0.49090916, y: 0.4990726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_3
+      rect:
+        serializedVersion: 2
+        x: 798.35016
+        y: 1348.0796
+        width: 149.96722
+        height: 280.72913
+      alignment: 9
+      pivot: {x: 0.51111066, y: 0.50198}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_4
+      rect:
+        serializedVersion: 2
+        x: 992.67615
+        y: 1338.2266
+        width: 255.94751
+        height: 292.26282
+      alignment: 9
+      pivot: {x: 0.49550724, y: 0.50390756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_5
+      rect:
+        serializedVersion: 2
+        x: 1360.9312
+        y: 782.5425
+        width: 260.94104
+        height: 896.4607
+      alignment: 9
+      pivot: {x: 0.51187366, y: 0.50081116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_6
+      rect:
+        serializedVersion: 2
+        x: 1703.477
+        y: 561.0857
+        width: 175.84705
+        height: 855.69385
+      alignment: 9
+      pivot: {x: 0.49772203, y: 0.5024161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_7
+      rect:
+        serializedVersion: 2
+        x: 615.6484
+        y: 1229.3861
+        width: 100.71991
+        height: 158.72473
+      alignment: 9
+      pivot: {x: 0.49991727, y: 0.5078849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_8
+      rect:
+        serializedVersion: 2
+        x: 1124.1682
+        y: 1039.6742
+        width: 189.88794
+        height: 251.5398
+      alignment: 9
+      pivot: {x: 0.5073086, y: 0.50221}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_9
+      rect:
+        serializedVersion: 2
+        x: 55.25877
+        y: 864.34283
+        width: 275.60983
+        height: 212.83575
+      alignment: 9
+      pivot: {x: 0.5033972, y: 0.4964258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_10
+      rect:
+        serializedVersion: 2
+        x: 364.0196
+        y: 758.51636
+        width: 278.95422
+        height: 425.94775
+      alignment: 9
+      pivot: {x: 0.4982194, y: 0.4965014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_11
+      rect:
+        serializedVersion: 2
+        x: 864.8085
+        y: 1049.5836
+        width: 166.12085
+        height: 195.92017
+      alignment: 9
+      pivot: {x: 0.49777934, y: 0.49467283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_13
+      rect:
+        serializedVersion: 2
+        x: 802.1793
+        y: 730.4808
+        width: 171.21661
+        height: 283.08167
+      alignment: 9
+      pivot: {x: 0.49539983, y: 0.50169}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_14
+      rect:
+        serializedVersion: 2
+        x: 88.967224
+        y: 460.44278
+        width: 212.84067
+        height: 255.85617
+      alignment: 9
+      pivot: {x: 0.5052266, y: 0.4985505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_15
+      rect:
+        serializedVersion: 2
+        x: 265.31577
+        y: 8.194771
+        width: 381.73618
+        height: 563.3946
+      alignment: 9
+      pivot: {x: 0.50082815, y: 0.5001916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_16
+      rect:
+        serializedVersion: 2
+        x: 725.3784
+        y: 354.21634
+        width: 213.0014
+        height: 326.82742
+      alignment: 9
+      pivot: {x: 0.5169993, y: 0.51643056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_17
+      rect:
+        serializedVersion: 2
+        x: 1150.7184
+        y: 432
+        width: 173.53967
+        height: 291.73285
+      alignment: 9
+      pivot: {x: 0.4971867, y: 0.48503283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_18
+      rect:
+        serializedVersion: 2
+        x: 1397.4904
+        y: 421.83453
+        width: 195.01929
+        height: 350.8344
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49500692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_19
+      rect:
+        serializedVersion: 2
+        x: 1031.8198
+        y: 0
+        width: 268.08142
+        height: 429.30438
+      alignment: 9
+      pivot: {x: 0.49865514, y: 0.4938221}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: spritesheet_owen_marche_20
+      rect:
+        serializedVersion: 2
+        x: 1388.983
+        y: 0.1606307
+        width: 214.46594
+        height: 407.0695
+      alignment: 9
+      pivot: {x: 0.4943301, y: 0.4970635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 99514969305379
+  assetBundleName: 
+  assetBundleVariant: 

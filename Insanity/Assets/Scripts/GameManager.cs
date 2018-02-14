@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
     public int heldItem = 0;
     public float lightGeneralInt = 1f;
     public float lightNightInt = 0f;
+	public bool isDayGM = true;
 
     //Awake is always called before any Start functions
     void Awake()
@@ -42,5 +43,10 @@ public class GameManager : MonoBehaviour {
 	void Update()
 	{
 
+	}
+
+	void OnApplicationQuit()
+	{
+		PlayerPrefs.DeleteAll();
 	}
 }
