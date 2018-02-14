@@ -477,6 +477,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114359036759372138, guid: 8440b51f4cefccc4288d5f7eeb1e912a,
+        type: 2}
+      propertyPath: playerTorch
+      value: 
+      objectReference: {fileID: 563617301}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8440b51f4cefccc4288d5f7eeb1e912a, type: 2}
   m_IsPrefabParent: 0
@@ -532,6 +537,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
     type: 2}
   m_PrefabInternal: {fileID: 563617298}
+--- !u!108 &563617301 stripped
+Light:
+  m_PrefabParentObject: {fileID: 108329600093590282, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
+    type: 2}
+  m_PrefabInternal: {fileID: 563617298}
 --- !u!1 &902750687
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +571,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 55c0a7f5f59b3314ba74a624807f37bb, type: 2}
+  - {fileID: 2100000, guid: 79bafc12f1d0a0b4eb73e6f24de88e2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1596,7 +1606,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1266773247}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 000efb9f3cba2484ebb477dc99efd4dd, type: 3}
   m_Name: 
@@ -1616,7 +1626,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.9274817, y: 0}
+  m_Offset: {x: 0.9101305, y: 0.1582222}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1627,7 +1637,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15.854965, y: 9.13}
+  m_Size: {x: 18.623854, y: 13.085558}
   m_EdgeRadius: 0
 --- !u!212 &1266773252
 SpriteRenderer:
@@ -1643,7 +1653,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 55c0a7f5f59b3314ba74a624807f37bb, type: 2}
+  - {fileID: 2100000, guid: f057a233f513b4a4faaf4230a02ac2b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1680,7 +1690,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1266773247}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -722.47, y: -325.41, z: 0}
+  m_LocalPosition: {x: -722.47, y: -325.6, z: 0}
   m_LocalScale: {x: 0.39582872, y: 0.3958287, z: 0.3958287}
   m_Children: []
   m_Father: {fileID: 1112857206}
