@@ -55,11 +55,24 @@ public class HandHeldItem : MonoBehaviour {
 				if (Inventory.instance.items [itemInHand - 1].name == "Wood Plank") {
 					if (GameObject.FindObjectOfType<PlayerWoodPlank> ()) {
 						GameObject.FindObjectOfType<PlayerWoodPlank> ().SendMessage ("hit");
-						Inventory.instance.RemoveAt (itemInHand - 1);
+						//Inventory.instance.RemoveAt (itemInHand - 1);
 					}
 				}
 			}
+			
 		}
 
     }
+
+	public void hit(){
+		if (((itemInHand - 1) < Inventory.instance.items.Count) && itemInHand!=0) {
+				if (Inventory.instance.items [itemInHand - 1].name == "Wood Plank") {
+					if (GameObject.FindObjectOfType<PlayerWoodPlank> ()) {
+						GameObject.FindObjectOfType<PlayerWoodPlank> ().SendMessage ("hit");
+						Inventory.instance.RemoveAt (itemInHand - 1);
+						return;
+					}
+				}
+			}
+	}
 }

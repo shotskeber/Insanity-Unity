@@ -6,7 +6,7 @@ public class SocleManivelle : MonoBehaviour {
     public Lustre lustreScript;
     public GameObject manivelle;
     public bool manivelleON = false;
-
+    public IA_Boss_01 bossIAScript;
     bool _canInteract = false;
 
     // Use this for initialization
@@ -28,19 +28,21 @@ public class SocleManivelle : MonoBehaviour {
     {
         if (other.CompareTag("Player") && manivelleON == true)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if(bossIAScript.isStuned == false)
             {
-                Debug.Log("GO SMT");
-                
-                if (lustreScript.lustreIsDown) //lustre go up if lustre down;
+                if (Input.GetKeyDown(KeyCode.E))
                 {
-                    lustreScript.LustreReverse();
-                } 
-                else if (!lustreScript.lustreIsDown) //lustre go down if lustre up;
-                {
-                    lustreScript.LustreFall();
+                    //Debug.Log("GO SMT");
+
+                    if (lustreScript.lustreIsDown) //lustre go up if lustre down;
+                    {
+                        lustreScript.LustreReverse();
+                    }
+                    else if (!lustreScript.lustreIsDown) //lustre go down if lustre up;
+                    {
+                        lustreScript.LustreFall();
+                    }
                 }
-                
             }
         }
     }
