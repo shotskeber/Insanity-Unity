@@ -24,6 +24,7 @@ public class PlayerWoodPlank : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.CompareTag("Boss")) {
 			other.gameObject.GetComponent<IA_Boss_01>().isStuned = true;
+			GameObject.FindObjectOfType<HandHeldItem>().SendMessage("hit");
             this.gameObject.SetActive(false);
 		}
 	}
