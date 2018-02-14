@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Animations/maincharacter_hiddle.unity
+- path: Assets/Animations/owen_idle&run.unity
   isLoaded: 1
   isActive: 1
