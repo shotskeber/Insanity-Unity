@@ -15,14 +15,15 @@ public class InfoPickUp : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && _canInteract)
+        /*if (Input.GetKeyDown(KeyCode.E) && _canInteract)
         {
             PickUp();
-        }
+        }*/
     }
     // Pick up the item
-	void PickUp()
+	public void PickUp()
     {
+		GameManager.instance.StartCoroutine (GameManager.instance.infoGained());
         DialogueInventory.instance.Add(item);   // Add to inventory
 
         //Destroy(gameObject);    // Destroy item from scene

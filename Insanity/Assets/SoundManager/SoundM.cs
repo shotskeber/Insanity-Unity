@@ -7,7 +7,7 @@ namespace DigitalRuby.SoundManagerNamespace
     public class SoundM : MonoBehaviour
     {
         private AudioSource[] SoundAudioSources;
-        private AudioSource[] MusicAudioSources;
+		private AudioSource[] MusicAudioSources;
 
         #region singleton
         public static SoundM Instance { get { return instance; } }
@@ -26,14 +26,17 @@ namespace DigitalRuby.SoundManagerNamespace
         private void Start()
         {
 			SoundAudioSources = new AudioSource[transform.Find("SFXSources").childCount];
+			//AudioSource[] SoundAudioSources = GameObject.Find ("SFXSources").gameObject.GetComponentsInChildren<AudioSource> ();
 			MusicAudioSources = new AudioSource[transform.Find("MusicSources").childCount];
+			//AudioSource[] MusicAudioSources = GameObject.Find("MusicSources").gameObject.GetComponentsInChildren<AudioSource> ();
+		
             for (int i = 0; i < SoundAudioSources.Length; i++)
             {
-                SoundAudioSources[i] = transform.Find("SFXSources").GetChild(i).GetComponent<AudioSource>();
+                SoundAudioSources[i] = transform.Find("SFXSources").transform.GetChild(i).GetComponent<AudioSource>();
             }
             for (int i = 0; i < MusicAudioSources.Length; i++)
             {
-                MusicAudioSources[i] = transform.Find("MusicSources").GetChild(i).GetComponent<AudioSource>();
+				MusicAudioSources[i] = transform.Find("MusicSources").transform.GetChild(i).GetComponent<AudioSource>();
             }
         }
 
@@ -41,17 +44,25 @@ namespace DigitalRuby.SoundManagerNamespace
         {
             for (int i = 0; i < SoundAudioSources.Length; i++)
             {
+				print (Clip);
+				print (SoundAudioSources [i].name);
                 if (Clip == SoundAudioSources[i].name) { PlaySound(i); }
             }
         }
 
-        public void PlayMusic(string Clip)
+       /* public void PlayMusic(string Clip)
         {
+			print ("calledfunc");
             for (int i = 0; i < MusicAudioSources.Length; i++)
             {
-                if (Clip == MusicAudioSources[i].name) { PlayMusic(i); }
+				if (Clip == MusicAudioSources [i].name) {
+					print ("found clip");
+					PlayMusic (i);
+				} else {
+					print (Clip + " : " + MusicAudioSources [i].name);
+				}
             }
-        }
+        }*/
 
         public void StopMusic(string Clip)
         {
@@ -66,8 +77,9 @@ namespace DigitalRuby.SoundManagerNamespace
             SoundAudioSources[index].PlayOneShotSoundManaged(SoundAudioSources[index].clip);
         }
 
-        private void PlayMusic(int index)
+		public void PlayMusic(int index)
         {
+			//print ("MusicStarted");
             MusicAudioSources[index].PlayLoopingMusicManaged(1.0f, 2.0f, false);
         }
 

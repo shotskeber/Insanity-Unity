@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using System.Collections;
 
 /* This object manages the inventory UI. */
 
@@ -17,8 +18,7 @@ public class DialogueInventoryUI : MonoBehaviour
     {
         inventory = DialogueInventory.instance;
         inventory.onItemChangedCallback += UpdateUI;
-		inventoryUI.SetActive(!inventoryUI.activeSelf);
-		UpdateUI();
+		StartCoroutine (lateStart ());
     }
 
     // Check to see if we should open/close the inventory
@@ -52,5 +52,12 @@ public class DialogueInventoryUI : MonoBehaviour
             }
         }
     }
+
+	IEnumerator lateStart(){
+		yield return 0;
+		inventoryUI.SetActive(!inventoryUI.activeSelf);
+		UpdateUI();
+		GameObject.FindGameObjectWithTag ("infoPop").transform.position += new Vector3 (0f, -100f, 0f);
+	}
 
 }

@@ -41,3 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/New BOSS01/Test03.unity
     guid: 00a893b3f0c768e4b953e5cfe5100568
+  - enabled: 1
+    path: Assets/Phase Preparation/Phase_preparation.unity
+    guid: 43b89ef3885351a43b1c32b976ff19e4

@@ -9,6 +9,7 @@ TagManager:
   - Laser
   - Waypoint
   - Boss
+  - infoPop
   layers:
   - Default
   - TransparentFX

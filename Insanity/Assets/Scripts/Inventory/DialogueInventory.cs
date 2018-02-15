@@ -6,12 +6,16 @@ using UnityEngine;
 public class DialogueInventory : MonoBehaviour {
     #region Singleton
 
-    public static DialogueInventory instance;
+	public static DialogueInventory instance = null;
 
-    void Awake()
-    {
-        instance = this;
-    }
+	void Awake()
+	{
+		if (instance == null)
+			instance = this;
+		else if (instance != this)
+			Destroy(gameObject);
+		DontDestroyOnLoad(gameObject);
+	}
 
     #endregion
 

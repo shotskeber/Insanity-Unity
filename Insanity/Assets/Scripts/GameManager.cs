@@ -52,4 +52,10 @@ public class GameManager : MonoBehaviour {
 	{
 		PlayerPrefs.DeleteAll();
 	}
+
+	public IEnumerator infoGained(){
+		GameObject.FindGameObjectWithTag ("infoPop").transform.position += new Vector3 (0f, 100f, 0f);
+		yield return new WaitForSeconds (2.5f);
+		GameObject.FindGameObjectWithTag ("infoPop").transform.position += new Vector3 (0f, -100f, 0f);
+	}
 }
