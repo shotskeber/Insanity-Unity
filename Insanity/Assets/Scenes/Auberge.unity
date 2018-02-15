@@ -348,7 +348,7 @@ Prefab:
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -76.99894
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224084097976026420, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -428,12 +428,12 @@ Prefab:
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224984254836373710, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -895,12 +895,6 @@ MonoBehaviour:
   isTrigger: 1
   positionInLevel: 2
   isBossEntry: 0
---- !u!114 &659018817 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114955699467945984, guid: a3afddacf4d95204089546c14649efe3,
-    type: 2}
-  m_PrefabInternal: {fileID: 349554742}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1001 &756121526
 Prefab:
   m_ObjectHideFlags: 0
@@ -1765,7 +1759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 659018817}
+  selectedFlowchart: {fileID: 1672855563}
 --- !u!4 &1593255990
 Transform:
   m_ObjectHideFlags: 1
@@ -1900,23 +1894,29 @@ Prefab:
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
-    - target: {fileID: 1398884043573236, guid: 59e065bd9ce89784c92ba9316c081735, type: 2}
-      propertyPath: m_Name
-      value: Taverne
-      objectReference: {fileID: 0}
-    - target: {fileID: 114627004023495528, guid: 59e065bd9ce89784c92ba9316c081735,
-        type: 2}
-      propertyPath: targetObject
-      value: 
-      objectReference: {fileID: 1008392961}
     - target: {fileID: 114521364172740576, guid: 59e065bd9ce89784c92ba9316c081735,
         type: 2}
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 1008392961}
+    - target: {fileID: 114627004023495528, guid: 59e065bd9ce89784c92ba9316c081735,
+        type: 2}
+      propertyPath: targetObject
+      value: 
+      objectReference: {fileID: 1008392961}
+    - target: {fileID: 1398884043573236, guid: 59e065bd9ce89784c92ba9316c081735, type: 2}
+      propertyPath: m_Name
+      value: Taverne
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59e065bd9ce89784c92ba9316c081735, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1672855563 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114293771586318108, guid: 59e065bd9ce89784c92ba9316c081735,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672855562}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1001 &1789403204
 Prefab:
   m_ObjectHideFlags: 0
@@ -2248,7 +2248,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4967863625573058, guid: 6d8b78dc59607bf4b8cf77ffa6752321, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.73039
+      value: 0.7303901
       objectReference: {fileID: 0}
     - target: {fileID: 4629496074562844, guid: 6d8b78dc59607bf4b8cf77ffa6752321, type: 2}
       propertyPath: m_LocalRotation.w
@@ -2292,7 +2292,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4967863625573058, guid: 6d8b78dc59607bf4b8cf77ffa6752321, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.68303037
+      value: -0.6830304
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d8b78dc59607bf4b8cf77ffa6752321, type: 2}
