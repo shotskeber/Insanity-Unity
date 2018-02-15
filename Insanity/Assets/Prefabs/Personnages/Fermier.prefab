@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61360840182079412}
   - component: {fileID: 114354419211154524}
   - component: {fileID: 114238642365425444}
+  - component: {fileID: 114493345908411274}
   m_Layer: 0
   m_Name: Fermier
   m_TagString: Untagged
@@ -41,29 +42,23 @@ GameObject:
   - component: {fileID: 4566593214396762}
   - component: {fileID: 114821092424445710}
   - component: {fileID: 114078491548133640}
-  - component: {fileID: 114318227782054828}
   - component: {fileID: 114783959418515820}
   - component: {fileID: 114307417176019102}
   - component: {fileID: 114875454724744634}
   - component: {fileID: 114821573113986764}
   - component: {fileID: 114359655577125404}
-  - component: {fileID: 114874895308175656}
   - component: {fileID: 114451343324612482}
   - component: {fileID: 114604478637052492}
   - component: {fileID: 114243650731831924}
-  - component: {fileID: 114024059878165532}
   - component: {fileID: 114275809948512706}
   - component: {fileID: 114377228702121614}
   - component: {fileID: 114035544343977478}
-  - component: {fileID: 114273123067426270}
   - component: {fileID: 114572096518202018}
   - component: {fileID: 114230920121128400}
   - component: {fileID: 114935017827231828}
   - component: {fileID: 114484368367156058}
-  - component: {fileID: 114174327015484174}
   - component: {fileID: 114060838205025594}
   - component: {fileID: 114904791470048924}
-  - component: {fileID: 114348963514988844}
   - component: {fileID: 114754955675957708}
   - component: {fileID: 114690591628303470}
   - component: {fileID: 114097606440498730}
@@ -72,41 +67,48 @@ GameObject:
   - component: {fileID: 114667430599110566}
   - component: {fileID: 114663410074903968}
   - component: {fileID: 114489674219398326}
-  - component: {fileID: 114773579554536500}
   - component: {fileID: 114334674277244860}
   - component: {fileID: 114192551191989824}
   - component: {fileID: 114516545386048022}
-  - component: {fileID: 114045644367469250}
   - component: {fileID: 114700016855194992}
   - component: {fileID: 114821944980678196}
   - component: {fileID: 114580975324518930}
-  - component: {fileID: 114705274751727174}
   - component: {fileID: 114617429433907286}
   - component: {fileID: 114599532981386574}
   - component: {fileID: 114764800628154134}
-  - component: {fileID: 114318849055910294}
   - component: {fileID: 114570037058356400}
   - component: {fileID: 114463720915698580}
-  - component: {fileID: 114491643955524788}
   - component: {fileID: 114212957563816448}
   - component: {fileID: 114574431874548256}
   - component: {fileID: 114825102059421996}
-  - component: {fileID: 114678926441623676}
   - component: {fileID: 114389341963870122}
   - component: {fileID: 114823796915386566}
   - component: {fileID: 114752441546101660}
   - component: {fileID: 114204583345500324}
   - component: {fileID: 114643781786155138}
-  - component: {fileID: 114004111752803740}
   - component: {fileID: 114078052718091088}
   - component: {fileID: 114510412662121834}
   - component: {fileID: 114052006367971996}
   - component: {fileID: 114305003162044526}
-  - component: {fileID: 114124189747397408}
   - component: {fileID: 114570136136867558}
   - component: {fileID: 114227569905887582}
   - component: {fileID: 114407331077150290}
   - component: {fileID: 114083683823095308}
+  - component: {fileID: 114555200471248870}
+  - component: {fileID: 114575731677387480}
+  - component: {fileID: 114913247190582418}
+  - component: {fileID: 114779706111309118}
+  - component: {fileID: 114991505749071300}
+  - component: {fileID: 114647382746037766}
+  - component: {fileID: 114909156107117244}
+  - component: {fileID: 114830401440237730}
+  - component: {fileID: 114978641356344854}
+  - component: {fileID: 114195580068809802}
+  - component: {fileID: 114421889587035658}
+  - component: {fileID: 114957734553187662}
+  - component: {fileID: 114119961102181984}
+  - component: {fileID: 114906753189773084}
+  - component: {fileID: 114761157412218594}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -114,6 +116,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1175763039365946
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4402048571789808}
+  - component: {fileID: 212841007107348690}
+  m_Layer: 0
+  m_Name: speakE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1309156390425608
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,12 +169,26 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1025521421016504}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -610.88, y: -323.59, z: 0}
+  m_LocalPosition: {x: -629, y: -324.61, z: 0}
   m_LocalScale: {x: 0.39582872, y: 0.3958287, z: 0.3958287}
-  m_Children: []
+  m_Children:
+  - {fileID: 4402048571789808}
   m_Father: {fileID: 4030312695794344}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!4 &4402048571789808
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175763039365946}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.47, y: 5.6, z: 0}
+  m_LocalScale: {x: 2.5263453, y: 2.5263455, z: 2.5263455}
+  m_Children: []
+  m_Father: {fileID: 4046151552223506}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4566593214396762
 Transform:
   m_ObjectHideFlags: 1
@@ -195,62 +227,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14.227823, y: 9.13}
   m_EdgeRadius: 0
---- !u!114 &114004111752803740
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 198
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &114024059878165532
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 124
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &114035544343977478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -266,45 +242,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 392.5369
     y: 5.8895245
-    width: 263.79297
+    width: 301.13635
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 132
   blockName: "Vous allez souvent du c\xF4t\xE9 du manoir ?"
   description: 
-  eventHandler: {fileID: 114273123067426270}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 114572096518202018}
   - {fileID: 114230920121128400}
---- !u!114 &114045644367469250
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 177
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &114052006367971996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -396,14 +344,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: -355.45734
     y: 0.32860565
-    width: 363.7929
+    width: 409.09085
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
   blockName: "Bien le bonjour l'\xE9trangers, que puis-je faire pour vous ?"
   description: 
-  eventHandler: {fileID: 114318227782054828}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 114307417176019102}
   - {fileID: 114875454724744634}
@@ -422,8 +370,7 @@ MonoBehaviour:
   itemId: 207
   indentLevel: 0
   description: marche
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -450,20 +397,20 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 1084.9982
-    y: 1.9663849
-    width: 268.9654
+    y: 0.9663849
+    width: 302.2727
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 168
   blockName: "Allez-vous en ! Je n'ai rien \xE0 vous dire !"
   description: 
-  eventHandler: {fileID: 114773579554536500}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 114735551289419602}
   - {fileID: 114807588401215482}
   - {fileID: 114667430599110566}
---- !u!114 &114124189747397408
+--- !u!114 &114119961102181984
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -474,39 +421,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 203
+  itemId: 210
   indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &114174327015484174
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 139
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
+  description: 
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -543,6 +461,21 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &114195580068809802
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bef7966140464bd5a3ef4da2ff236b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 213
+  indentLevel: 1
+  key: fermierTime
+  variable: {fileID: 114555200471248870}
 --- !u!114 &114204583345500324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -557,8 +490,7 @@ MonoBehaviour:
   itemId: 196
   indentLevel: 0
   description: marche
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -700,22 +632,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114024059878165532}
   - {fileID: 114275809948512706}
   - {fileID: 114377228702121614}
---- !u!114 &114273123067426270
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 114035544343977478}
-  message: Manoir en construction
 --- !u!114 &114275809948512706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -767,7 +685,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114124189747397408}
   - {fileID: 114570136136867558}
   - {fileID: 114227569905887582}
 --- !u!114 &114307417176019102
@@ -784,49 +701,7 @@ MonoBehaviour:
   itemId: 116
   indentLevel: 0
   description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &114318227782054828
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 114078491548133640}
-  message: Le champ 1
---- !u!114 &114318849055910294
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 185
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -863,37 +738,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114705274751727174}
   - {fileID: 114617429433907286}
   - {fileID: 114599532981386574}
---- !u!114 &114348963514988844
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 143
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &114354419211154524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -932,7 +778,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114874895308175656}
   - {fileID: 114451343324612482}
   - {fileID: 114604478637052492}
   - {fileID: 114192551191989824}
@@ -1001,7 +846,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 872.63617
-    y: 601.3428
+    y: 603.51666
     width: 136.20685
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1012,6 +857,33 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 114083683823095308}
+--- !u!114 &114421889587035658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 212
+  indentLevel: 1
+  variable: {fileID: 114555200471248870}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 1
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &114451343324612482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1087,7 +959,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114174327015484174}
   - {fileID: 114904791470048924}
   - {fileID: 114060838205025594}
 --- !u!114 &114489674219398326
@@ -1104,8 +975,7 @@ MonoBehaviour:
   itemId: 173
   indentLevel: 0
   description: marche
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1118,34 +988,18 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &114491643955524788
+--- !u!114 &114493345908411274
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
+  m_GameObject: {fileID: 1025521421016504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Script: {fileID: 11500000, guid: c312ffcbecf8bee4fb4cf7d2eb84a999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 188
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
+  textInfo: {fileID: 1175763039365946}
 --- !u!114 &114510412662121834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1195,9 +1049,22 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114045644367469250}
   - {fileID: 114700016855194992}
   - {fileID: 114821944980678196}
+--- !u!114 &114555200471248870
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: TalkTimeFermier
+  value: 1
 --- !u!114 &114570037058356400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1265,8 +1132,7 @@ MonoBehaviour:
   itemId: 133
   indentLevel: 0
   description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1303,6 +1169,42 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
+--- !u!114 &114575731677387480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 230.37039
+    y: -200.35007
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 208
+  blockName: New Block
+  description: 
+  eventHandler: {fileID: 114761157412218594}
+  commandList:
+  - {fileID: 114906753189773084}
+  - {fileID: 114119961102181984}
+  - {fileID: 114957734553187662}
+  - {fileID: 114421889587035658}
+  - {fileID: 114195580068809802}
+  - {fileID: 114978641356344854}
+  - {fileID: 114830401440237730}
+  - {fileID: 114909156107117244}
+  - {fileID: 114647382746037766}
+  - {fileID: 114991505749071300}
+  - {fileID: 114779706111309118}
+  - {fileID: 114913247190582418}
 --- !u!114 &114580975324518930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1327,7 +1229,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114491643955524788}
   - {fileID: 114212957563816448}
   - {fileID: 114574431874548256}
 --- !u!114 &114599532981386574
@@ -1431,10 +1332,24 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114004111752803740}
   - {fileID: 114078052718091088}
   - {fileID: 114510412662121834}
   - {fileID: 114052006367971996}
+--- !u!114 &114647382746037766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bef7966140464bd5a3ef4da2ff236b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 220
+  indentLevel: 1
+  key: fermierTime
+  variable: {fileID: 114555200471248870}
 --- !u!114 &114663410074903968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1484,34 +1399,6 @@ MonoBehaviour:
   hideThisOption:
     booleanRef: {fileID: 0}
     booleanVal: 0
---- !u!114 &114678926441623676
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 192
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &114690591628303470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1565,34 +1452,6 @@ MonoBehaviour:
   stopVoiceover: 0
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &114705274751727174
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093960593497596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 181
-  indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &114735551289419602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1607,8 +1466,7 @@ MonoBehaviour:
   itemId: 169
   indentLevel: 0
   description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1672,6 +1530,19 @@ MonoBehaviour:
   stopVoiceover: 0
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &114761157412218594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 114575731677387480}
+  message: Le champ 1
 --- !u!114 &114764800628154134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1685,7 +1556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -131.14648
+    x: -132.87062
     y: 353.81696
     width: 382.75842
     height: 40
@@ -1696,10 +1567,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114318849055910294}
   - {fileID: 114570037058356400}
   - {fileID: 114463720915698580}
---- !u!114 &114773579554536500
+--- !u!114 &114779706111309118
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1707,11 +1577,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093960593497596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 114097606440498730}
-  message: Placeholder
+  itemId: 218
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 114555200471248870}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 2
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &114783959418515820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1764,21 +1648,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 215.29395, y: 414.17392}
+  scrollPos: {x: 390.9602, y: 267.2625}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.58000034
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 114575731677387480}
   selectedCommands: []
   variables:
   - {fileID: 114783959418515820}
+  - {fileID: 114555200471248870}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -1887,10 +1773,9 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114678926441623676}
   - {fileID: 114389341963870122}
   - {fileID: 114823796915386566}
---- !u!114 &114874895308175656
+--- !u!114 &114830401440237730
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1898,26 +1783,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1093960593497596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 120
+  itemId: 217
   indentLevel: 0
-  description: Stop
-  targetObject: {fileID: 1224696412680158, guid: 6d8b78dc59607bf4b8cf77ffa6752321,
-    type: 2}
-  targetComponentAssemblyName: PlayerMovement, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: PlayerMovement
-  targetMethod: StopMovement
-  targetMethodText: 'StopMovement (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
+  compareOperator: 0
+  variable: {fileID: 114555200471248870}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 1
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &114875454724744634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1971,6 +1855,68 @@ MonoBehaviour:
   stopVoiceover: 0
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &114906753189773084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c657364a3b24e16bdf5946729a8b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 209
+  indentLevel: 0
+  key: fermierTime
+  variable: {fileID: 114555200471248870}
+--- !u!114 &114909156107117244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 219
+  indentLevel: 1
+  variable: {fileID: 114555200471248870}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 2
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &114913247190582418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 224
+  indentLevel: 1
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 114097606440498730}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &114935017827231828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1997,9 +1943,75 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 114348963514988844}
   - {fileID: 114754955675957708}
   - {fileID: 114690591628303470}
+--- !u!114 &114957734553187662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 211
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 114555200471248870}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &114978641356344854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 214
+  indentLevel: 1
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 114078491548133640}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &114991505749071300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093960593497596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 221
+  indentLevel: 1
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 114035544343977478}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!212 &212593533291769996
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2038,6 +2050,48 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 10, y: 9.13}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212841007107348690
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1175763039365946}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: c3667147c67875b4cad279e7c99daf9a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.29, y: 1.67}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

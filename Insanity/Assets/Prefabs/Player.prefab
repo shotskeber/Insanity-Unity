@@ -1047,7 +1047,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1528080961858452}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.657, z: 0}
+  m_LocalPosition: {x: 0.02, y: 0.657, z: -10}
   m_LocalScale: {x: -0.14999999, y: 0.14999999, z: 0.5}
   m_Children:
   - {fileID: 4885050890854224}
@@ -1661,7 +1661,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1267177891850606}
   m_LocalRotation: {x: -0, y: 0.0012674765, z: -0, w: 0.9999993}
-  m_LocalPosition: {x: 0.724, y: 0.493, z: -0.941}
+  m_LocalPosition: {x: 0.724, y: 0.493, z: -10.941}
   m_LocalScale: {x: 0.5542449, y: 0.55424464, z: 0.5542449}
   m_Children:
   - {fileID: 4881938624570340}
@@ -2096,7 +2096,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: -0, y: -0, z: 0.048774503, w: -0.9988099}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -25.882263, y: -2.049905, z: 0}
+    targetPosition: {x: -25.882263, y: -2.049905, z: -20}
     flip: 1
 --- !u!114 &114097816069346086
 MonoBehaviour:
@@ -2367,7 +2367,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: 0.044689085, w: 0.99900097}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -26.778107, y: -3.9111013, z: 0}
+    targetPosition: {x: -26.778107, y: -3.9111013, z: -20}
     flip: 0
 --- !u!114 &114361594847681634
 MonoBehaviour:
@@ -2479,7 +2479,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: 0.09812301, w: 0.9951743}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -26.167025, y: -3.8996205, z: 0}
+    targetPosition: {x: -26.167025, y: -3.8996205, z: -20}
     flip: 0
 --- !u!114 &114469622567922168
 MonoBehaviour:
@@ -2974,7 +2974,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: -0.2422378, w: 0.97021693}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -27.052685, y: -2.2773197, z: 0}
+    targetPosition: {x: -27.052685, y: -2.2773197, z: -20}
     flip: 1
 --- !u!114 &114816716068477184
 MonoBehaviour:
