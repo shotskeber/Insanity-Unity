@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 620f1bbd6bd55d747be74d73fe77368b
+timeCreated: 1518690260
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Slaytanic
+  fontNames:
+  - Slaytanic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
