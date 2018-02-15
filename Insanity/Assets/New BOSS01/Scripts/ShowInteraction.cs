@@ -6,7 +6,9 @@ public class ShowInteraction : MonoBehaviour {
 
     public GameObject textInfo;
 
-    void OnTriggerEnter2D(Collider2D other)
+    
+	
+	void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -19,6 +21,14 @@ public class ShowInteraction : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             textInfo.SetActive(false);
+        }
+    }
+
+		void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            textInfo.SetActive(true);
         }
     }
 }
