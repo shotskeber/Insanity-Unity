@@ -1118,7 +1118,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 919.2989
     y: -365.7105
-    width: 120
+    width: 127.65958
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1676,8 +1676,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -334371269
-  m_SortingLayer: 1
+  m_SortingLayerID: 1043643835
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 33497f39f6974ae4cb99b7fd3e87317b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

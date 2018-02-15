@@ -38,3 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Porte de la ville.unity
     guid: 3df3d7e437f86db48908dc7960cc756e
+  - enabled: 1
+    path: Assets/New BOSS01/Test03.unity
+    guid: 00a893b3f0c768e4b953e5cfe5100568

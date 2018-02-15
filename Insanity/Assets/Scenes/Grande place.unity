@@ -337,8 +337,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -334371269
-  m_SortingLayer: 1
+  m_SortingLayerID: 890771825
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 33497f39f6974ae4cb99b7fd3e87317b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -474,8 +474,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -334371269
-  m_SortingLayer: 1
+  m_SortingLayerID: 890771825
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fd8e13a8c870bfe45a5a78968358d948, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2153,7 +2153,7 @@ Prefab:
     - target: {fileID: 224084097976026420, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224084097976026420, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -2163,7 +2163,7 @@ Prefab:
     - target: {fileID: 224084097976026420, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224886880732885022, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -2183,7 +2183,7 @@ Prefab:
     - target: {fileID: 224886880732885022, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -155
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224886880732885022, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -2193,12 +2193,12 @@ Prefab:
     - target: {fileID: 224886880732885022, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224643847542228706, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 205
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -2218,12 +2218,12 @@ Prefab:
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 266.6667
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224408089597353870, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -813.3333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
