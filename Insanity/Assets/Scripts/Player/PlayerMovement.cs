@@ -15,12 +15,12 @@ public class PlayerMovement : MonoBehaviour {
 	public float directionP = 1f;
 	public bool _ladderInteract = false;
 	public bool isHidden = false;
-
+	public Animator _animator;
 	[HideInInspector]
 	private float normalizedHorizontalSpeed = 0;
 
 	private CharController2D _controller;
-	public Animator _animator;
+
 	private RaycastHit2D _lastControllerColliderHit;
 	private Vector3 _velocity;
 

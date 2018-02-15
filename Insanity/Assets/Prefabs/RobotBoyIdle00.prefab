@@ -2303,7 +2303,6 @@ MonoBehaviour:
   directionP: 1
   _ladderInteract: 0
   isHidden: 0
-  _animator: {fileID: 95831353613636416}
 --- !u!114 &114226794201364662
 MonoBehaviour:
   m_ObjectHideFlags: 1
