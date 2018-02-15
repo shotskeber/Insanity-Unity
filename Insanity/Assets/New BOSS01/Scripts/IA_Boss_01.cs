@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+
+//Quick and very dirty script -> temporary.
+
 public class IA_Boss_01 : MonoBehaviour {
 
     #region variables
-    [HideInInspector]
+    
     public Transform player;
 
-    [Header("Patrol")]
-    [Tooltip("If the sprite face left on the spritesheet, enable this. Otherwise, leave disabled")]
+    public GameObject fireParticles;
+
+    [Tooltip("The spawn of the player in this scene coming from an other one")]
     public Transform playerSpawn;
     public Boss01_TransitionScreenFade transitionScreenFading;
 
@@ -65,7 +71,7 @@ public class IA_Boss_01 : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //DEBUG
-        if(phase1_state == State_P1.STUNED || phase2_state == State_P2.STUNED || phase3_state == State_P3.STUNED)
+        if (phase1_state == State_P1.STUNED || phase2_state == State_P2.STUNED || phase3_state == State_P3.STUNED)
         {
             textDebug.text = "STUNED";
         }
@@ -180,13 +186,13 @@ public class IA_Boss_01 : MonoBehaviour {
             playerDetected = true;
 			if(phase_1){
 			phase1_state = State_P1.CHASE;
-			detector.GetComponent<Transform>().localScale = new Vector3(3.795496f, 0.1f, 0); //debug
+			detector.GetComponent<Transform>().localScale = new Vector3(0.5f, 0.99f, 0); //debug
 			} else if (phase_2){
 			phase2_state = State_P2.CHASE;
-			detector.GetComponent<Transform>().localScale = new Vector3(3.795496f, 0.1f, 0); //debug
+			detector.GetComponent<Transform>().localScale = new Vector3(0.5f, 0.99f, 0); //debug
             } else if (phase_3) {
             phase3_state = State_P3.CHASE;
-            detector.GetComponent<Transform>().localScale = new Vector3(3.795496f, 0.1f, 0); //debug
+            detector.GetComponent<Transform>().localScale = new Vector3(0.5f, 0.99f, 0); //debug
             }
         }
         else
@@ -228,7 +234,7 @@ public class IA_Boss_01 : MonoBehaviour {
             StartCoroutine(Chasecr());
 			//StartCoroutine(Attack(0)); //attack coroutine
         } else {
-		detector.GetComponent<Transform>().localScale = new Vector3(3.795496f, 0.1f, 0);
+		detector.GetComponent<Transform>().localScale = new Vector3(0.5f, 0.1f, 0);
 			if(phase_1){
 			phase1_state = State_P1.INVESTIGATE;
 			} else if (phase_2){
@@ -452,15 +458,30 @@ public class IA_Boss_01 : MonoBehaviour {
         isStuned = false;
         if (phase_1)
         {
-            phase1_state = State_P1.PATROL;
+            if(bossHealthPoints == 2)
+            {
+                phase1_state = State_P1.DEAD;
+            } else {
+                phase1_state = State_P1.PATROL;
+            }
         }
         else if (phase_2)
         {
-            phase2_state = State_P2.PATROL;
+            if(bossHealthPoints == 1)
+            {
+                phase2_state = State_P2.DEAD;
+            } else {
+                phase2_state = State_P2.PATROL;
+            }
         }
         else if (phase_3)
         {
-            phase3_state = State_P3.PATROL;
+            if(bossHealthPoints == 0)
+            {
+                phase3_state = State_P3.DEAD;
+            } else {
+                phase3_state = State_P3.PATROL;
+            }
         }
         yield return null;
     }
@@ -586,14 +607,18 @@ public class IA_Boss_01 : MonoBehaviour {
     //  phase3
     IEnumerator Phase_3_EndingCinematic()
     {
+        fireParticles.SetActive(false);
+		transitionScreenFading._fade = true;
         Collider2D playerCol = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
         Physics2D.IgnoreCollision(playerCol, bossCol, true);
         Physics2D.IgnoreCollision(playerCol, bossContactCol, true);
         player.GetComponent<SpriteRenderer>().sortingLayerName = "Player";
         bossVisibility_script.enabled = false;
         bossVisibility_script.detectingPlayer = false;
+		yield return new WaitForSeconds(1f);
         gameObject.SetActive(false);
         Debug.Log("Boss 01 is defeted.");
+        //SceneManager.LoadScene("ApresLeBoss");
         yield return null;
     }
 
@@ -665,6 +690,7 @@ public class IA_Boss_01 : MonoBehaviour {
         bossCol.enabled = true;
         Debug.Log("Transition to phase 2.");
         transitionScreenFading._fade = false;
+        fireParticles.SetActive(false);
 
         yield return null;
     }
@@ -702,9 +728,10 @@ public class IA_Boss_01 : MonoBehaviour {
         bossCol.enabled = true;
         Debug.Log("Transition to phase 3.");
         transitionScreenFading._fade = false;
+        fireParticles.SetActive(false);
+
         yield return null;
     }
-
 
     #endregion
 

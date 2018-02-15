@@ -8,6 +8,8 @@ public class MeuleFoinsInflamable : MonoBehaviour {
     public IA_Boss_01 iaBossScript;
     public int bossDammagesTakken;
     public GameObject fireFx;
+    public GameObject bossFireFX;
+
     //private ParticleSystem fireParticles;
 
 
@@ -30,6 +32,7 @@ public class MeuleFoinsInflamable : MonoBehaviour {
             if (other.CompareTag("Boss") && iaBossScript.isStuned)
             {
                 iaBossScript.GetComponent<IA_Boss_01>().bossHealthPoints = bossDammagesTakken;
+                bossFireFX.SetActive(true);
                 Debug.Log("BOSS TAKE DAMAGE");
                 //fireParticles.enableEmission = false;
                 //fireFx.SetActive(false);

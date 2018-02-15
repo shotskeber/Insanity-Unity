@@ -7,6 +7,9 @@ public class PlayerTorche : MonoBehaviour
     public IA_Boss_01 iaBossScript;
     public bool fireActive = false;
     public Lustre lustreSCript;
+    public SpriteRenderer playerTorche_spr;
+    public Sprite torcheAlume;
+    public Sprite torcheEtteinte;
     private ParticleSystem fireParticles;
 
     // Use this for initialization
@@ -23,6 +26,7 @@ public class PlayerTorche : MonoBehaviour
         {
             fireParticles.enableEmission = false;
             fireActive = false;
+            playerTorche_spr.sprite = torcheEtteinte;
         }
     }
 
@@ -49,9 +53,9 @@ public class PlayerTorche : MonoBehaviour
             if (other.gameObject.name == "WallTorche") {
                 fireParticles.enableEmission = true;
                 fireActive = true;
-
+                playerTorche_spr.sprite = torcheAlume;
             }
-             
+
         }
 
 

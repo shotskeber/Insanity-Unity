@@ -16,7 +16,8 @@ public class Lustre : MonoBehaviour {
 	public Animation lustreFall;
     public Animation lustreUpward;
     public GameObject particlesFallingOnGround;
-   //public Animation lustreAnim;
+    //public Animation lustreAnim;
+    public GameObject bossFireFX;
 
     private bool _canInteract = false;
 
@@ -37,7 +38,9 @@ public class Lustre : MonoBehaviour {
 
         //-----------------
         if (_canInteract && fireActive) {
-				iaBossScript.isStuned = true;
+                bossFireFX.SetActive(true);
+
+                iaBossScript.isStuned = true;
 				iaBossScript.GetComponent<IA_Boss_01>().bossHealthPoints = 0;
 				Debug.Log("Boss 01 DEFEATED");
 		}
