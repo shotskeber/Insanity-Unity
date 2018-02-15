@@ -1939,7 +1939,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &1006861404
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1006861365}
@@ -1954,7 +1954,7 @@ MonoBehaviour:
   variable: {fileID: 1006861367}
 --- !u!114 &1006861405
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1006861365}
@@ -2040,7 +2040,6 @@ GameObject:
   - component: {fileID: 1266773248}
   - component: {fileID: 1266773252}
   - component: {fileID: 1266773251}
-  - component: {fileID: 1266773250}
   - component: {fileID: 1266773249}
   m_Layer: 0
   m_Name: Pnj2
@@ -2071,21 +2070,7 @@ MonoBehaviour:
 --- !u!114 &1266773249
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114082546809623352, guid: 824c7200355a45f47b0ba05785b7b2ff,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1266773247}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bce543e4a4b763c46bd24eaa3264f39f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueToSay: "Entr\xE9e de la ville"
---- !u!114 &1266773250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114796519002287102, guid: 824c7200355a45f47b0ba05785b7b2ff,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1266773247}
   m_Enabled: 1
@@ -2191,7 +2176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -150.97522, y: 487.56024}
+  scrollPos: {x: 216.12997, y: 436.24442}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -2202,10 +2187,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1006861379}
-  selectedCommands:
-  - {fileID: 1006861404}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1006861366}
   - {fileID: 1006861367}
@@ -2620,7 +2603,7 @@ MonoBehaviour:
   showAlways: 1
   showCount: 1
   extendPrevious: 0
-  fadeWhenDone: 0
+  fadeWhenDone: 1
   waitForClick: 0
   stopVoiceover: 0
   waitForVO: 0
@@ -2992,7 +2975,7 @@ Prefab:
     - target: {fileID: 224084097976026420, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224084097976026420, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -3002,7 +2985,7 @@ Prefab:
     - target: {fileID: 224084097976026420, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224886880732885022, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -3022,7 +3005,7 @@ Prefab:
     - target: {fileID: 224886880732885022, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -155
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224886880732885022, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -3032,12 +3015,12 @@ Prefab:
     - target: {fileID: 224886880732885022, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224643847542228706, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 205
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -3052,17 +3035,17 @@ Prefab:
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -77.052284
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 266.6667
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224408089597353870, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -813.3333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224510466412791130, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}

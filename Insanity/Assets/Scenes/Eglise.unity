@@ -899,7 +899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0927c79c29f7d04a8872bfae2197b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenenumber: 4
+  scenenumber: 5
   isTrigger: 1
   positionInLevel: 0
   isBossEntry: 0

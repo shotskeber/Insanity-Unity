@@ -432,17 +432,17 @@ Prefab:
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -77.052284
       objectReference: {fileID: 0}
     - target: {fileID: 224354673963903250, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -900,9 +900,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0927c79c29f7d04a8872bfae2197b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenenumber: 4
+  scenenumber: 5
   isTrigger: 1
-  positionInLevel: 0
+  positionInLevel: 2
   isBossEntry: 0
 --- !u!1001 &349016937
 Prefab:
@@ -1527,9 +1527,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0927c79c29f7d04a8872bfae2197b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenenumber: 5
+  scenenumber: 4
   isTrigger: 0
-  positionInLevel: 0
+  positionInLevel: 1
   isBossEntry: 0
 --- !u!61 &1175451515
 BoxCollider2D:
