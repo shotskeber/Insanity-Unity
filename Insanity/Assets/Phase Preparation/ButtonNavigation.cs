@@ -117,7 +117,7 @@ public class ButtonNavigation : MonoBehaviour {
 
     void StartNextPhase()
     {
-		AutoFade.LoadLevel (1, 0.5f, 0.5f, Color.black);
+		AutoFade.LoadLevel (2, 0.5f, 0.5f, Color.black);
     }
 
 	void OnClick(){

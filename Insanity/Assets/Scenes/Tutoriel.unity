@@ -1511,8 +1511,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 444, y: 0.00021362305}
-  m_SizeDelta: {x: 160, y: 171.11}
+  m_AnchoredPosition: {x: 397.19977, y: 0.00021362305}
+  m_SizeDelta: {x: 253.6, y: 171.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &635684951
 MonoBehaviour:
@@ -1546,7 +1546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'hide
+  m_Text: 'Unhide
 
     E'
 --- !u!222 &635684952
@@ -6632,7 +6632,7 @@ Prefab:
     - target: {fileID: 224717635260959030, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 224717635260959030, guid: a3afddacf4d95204089546c14649efe3,
         type: 2}
@@ -7621,7 +7621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0927c79c29f7d04a8872bfae2197b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenenumber: 2
+  scenenumber: 12
   isTrigger: 1
   positionInLevel: 1
   isBossEntry: 0
