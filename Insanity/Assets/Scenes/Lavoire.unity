@@ -436,7 +436,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 800256047}
+      objectReference: {fileID: 800256066}
     - target: {fileID: 114049345126246944, guid: eea4a36d6906e94489048b9537c002f2,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
@@ -1118,7 +1118,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 919.2989
     y: -365.7105
-    width: 127.65958
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
