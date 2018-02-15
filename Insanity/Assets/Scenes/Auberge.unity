@@ -1864,7 +1864,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4323058563541500, guid: 59e065bd9ce89784c92ba9316c081735, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.9
+      value: 5.84
       objectReference: {fileID: 0}
     - target: {fileID: 4323058563541500, guid: 59e065bd9ce89784c92ba9316c081735, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1908,16 +1908,20 @@ Prefab:
       propertyPath: m_Name
       value: Taverne
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 212460024020267862, guid: 59e065bd9ce89784c92ba9316c081735,
         type: 2}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300006, guid: 501756bff64a81645bf76d11d7976f8c,
         type: 3}
+=======
+>>>>>>> 09b0dd9d047a9a891e4ef21fc226f9ca3765f5a2
     - target: {fileID: 1093708056686956, guid: 59e065bd9ce89784c92ba9316c081735, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1449387029247872, guid: 59e065bd9ce89784c92ba9316c081735, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -1996,6 +2000,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.8857339
       objectReference: {fileID: 0}
+=======
+>>>>>>> 09b0dd9d047a9a891e4ef21fc226f9ca3765f5a2
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59e065bd9ce89784c92ba9316c081735, type: 2}
   m_IsPrefabParent: 0
