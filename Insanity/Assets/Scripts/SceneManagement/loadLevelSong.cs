@@ -21,6 +21,16 @@ public class loadLevelSong : MonoBehaviour {
 	public levelSong SongLevel;
 	// Use this for initialization
 	void Start () {
+		StartCoroutine (lateStart ());
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	}
+	IEnumerator lateStart(){
+		SoundM.Instance.stopAllMusic ();
+		yield return 0;
 		switch (SongLevel) {
 		case levelSong.Champs:
 			SoundM.Instance.PlayMusic (0);
@@ -59,10 +69,5 @@ public class loadLevelSong : MonoBehaviour {
 			SoundM.Instance.PlayMusic (7);
 			break;
 		}
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
 	}
 }

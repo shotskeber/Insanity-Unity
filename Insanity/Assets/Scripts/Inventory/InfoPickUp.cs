@@ -25,10 +25,10 @@ public class InfoPickUp : MonoBehaviour
     {
 		GameManager.instance.StartCoroutine (GameManager.instance.infoGained());
         DialogueInventory.instance.Add(item);   // Add to inventory
-
+		
         //Destroy(gameObject);    // Destroy item from scene
     }
-    void OnTriggerEnter2D(Collider2D collision)
+    /*void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
@@ -42,6 +42,6 @@ public class InfoPickUp : MonoBehaviour
         {
             _canInteract = false;
         }
-    }
+    }*/
 
 }

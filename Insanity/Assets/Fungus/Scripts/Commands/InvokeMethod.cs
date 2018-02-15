@@ -270,7 +270,7 @@ namespace Fungus
                 {
                     Continue();
                     return;
-                }
+				}
 
                 if (returnValueType != "System.Collections.IEnumerator")
                 {

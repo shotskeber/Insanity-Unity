@@ -7,7 +7,7 @@ namespace DigitalRuby.SoundManagerNamespace
     public class SoundM : MonoBehaviour
     {
         private AudioSource[] SoundAudioSources;
-		private AudioSource[] MusicAudioSources;
+		public AudioSource[] MusicAudioSources;
 
         #region singleton
         public static SoundM Instance { get { return instance; } }
@@ -80,7 +80,7 @@ namespace DigitalRuby.SoundManagerNamespace
 		public void PlayMusic(int index)
         {
 			//print ("MusicStarted");
-            MusicAudioSources[index].PlayLoopingMusicManaged(1.0f, 2.0f, false);
+			MusicAudioSources[index].PlayLoopingMusicManaged(1.0f, 2.0f, false);
         }
 
         private void StopMusic(int index)
@@ -88,6 +88,11 @@ namespace DigitalRuby.SoundManagerNamespace
             MusicAudioSources[index].Stop();
             MusicAudioSources[index].StopLoopingMusicManaged();
         }
+		public void stopAllMusic(){
+			for (int i = 0; i < MusicAudioSources.Length; i++) {
+				MusicAudioSources [i].StopLoopingMusicManaged ();
+			}
+		}
 
     }
 }
