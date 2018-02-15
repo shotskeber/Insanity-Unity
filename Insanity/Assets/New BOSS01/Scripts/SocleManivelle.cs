@@ -7,6 +7,7 @@ public class SocleManivelle : MonoBehaviour {
     public GameObject manivelle;
     public bool manivelleON = false;
     public IA_Boss_01 bossIAScript;
+    public GameObject playerManivelle;
     bool _canInteract = false;
 
     // Use this for initialization
@@ -20,6 +21,7 @@ public class SocleManivelle : MonoBehaviour {
         {
             manivelleON = true;
             manivelle.SetActive(true);
+            playerManivelle.SetActive(false);
         }
     }
 
