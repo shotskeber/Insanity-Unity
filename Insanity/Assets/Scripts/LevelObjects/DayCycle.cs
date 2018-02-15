@@ -40,7 +40,7 @@ public class DayCycle : MonoBehaviour {
 				nightLight.intensity = 0f;
 			} else {
 				sun.intensity = 0f;
-				nightLight.intensity = 0.35f;
+				nightLight.intensity = 0.375f;
 			}
         }
     }
@@ -69,7 +69,7 @@ public class DayCycle : MonoBehaviour {
 			if (isDay) {
 				isDay = false;
 				StartCoroutine (ScaleX1(sun.intensity, 0f, 10f, sun));
-				StartCoroutine (ScaleX1(nightLight.intensity, 0.35f, 7f, nightLight));
+				StartCoroutine (ScaleX1(nightLight.intensity, 0.375f, 7f, nightLight));
 			}
 		} else if (currentTime >= dayLength) {
 			currentTime = 0;
